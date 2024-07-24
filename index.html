@@ -17,9 +17,16 @@
       tailwind.config = {
         theme: {
           extend: {
+            height: {
+              lvh: "120lvh",
+            },
+            lineHeight: {
+              8: "3.5rem",
+            },
             colors: {
               maincolor: "#263B5C",
               secondarycolor: "#F15B43",
+              boxcolor: "#65C9BB",
               facebook: "#3B5998",
               instagram: "#405DE6",
               linkdin: "#0077B5",
@@ -37,10 +44,10 @@
     </style>
   </head>
 
-  <body>
+  <body class="w-screen overflow-x-clip">
     <!-- NAVIGATION -->
-    <nav class="bg-maincolor">
-      <div class="w-10/12 mx-auto flex items-center justify-between py-5">
+    <nav id="navigation " class="relative z-50">
+      <div class="w-11/12 mx-auto flex items-center justify-between py-5">
         <div class="flex items-center gap-24 text-white">
           <div
             class="text-3xl font-medium fontuse flex gap-3 items-center justify-center"
@@ -61,7 +68,7 @@
           </div>
 
           <div class="lg:flex hidden items-center gap-8 capitalize">
-            <a href="./index.html" >home</a>
+            <a href="./index.html">home</a>
             <a href="./HMTL/About.html">about</a>
             <a href="./HMTL/Whower.html">Who we are?</a>
             <a href="./HMTL/Programs.html">Programs</a>
@@ -101,7 +108,7 @@
         class="w-44 h-full fixed top-24 mt-2 transition-all duration-500 delay-150 ease-in-out translate-x-44 shadow-md border-l p-6 right-0 bg-white text-maincolor"
       >
         <div class="flex flex-col gap-8 font-semibold capitalize">
-          <a href="./index.html" >home</a>
+          <a href="./index.html">home</a>
           <a href="./HMTL/About.html">about</a>
           <a href="./HMTL/Whower.html">Who we are?</a>
           <a href="./HMTL/Programs.html">Programs</a>
@@ -110,8 +117,37 @@
       </div>
     </nav>
 
+    <div class="w-screen h-[400px] md:h-[600px] lg:h-lvh absolute top-0 left-0">
+      <img src="./Images/Mainimg.jpg" class="h-full w-full object-cover" />
+      <div class="bg-black w-full h-full absolute top-0 left-0 bg-opacity-60">
+        <div
+          class="w-10/12 h-full mx-auto flex flex-col text-white justify-center items-center md:items-start pt-4 gap-4 lg:pt-0 lg:gap-8"
+        >
+          <div
+            class="text-xl text-center  md:text-left  md:text-5xl font-bold lg:w-5/12"
+          >
+            Give me a helping hand to those who need it!
+          </div>
+          <div
+            class="text-center lg:text-left lg:w-4/12 lg:text-xl font-semibold"
+          >
+            When a child gets access to good food, it can changejust about
+            everything.
+          </div>
+          <div
+            class="capitalize cursor-pointer bg-boxcolor w-fit h-fit p-2 lg:p-5 hover:bg-transparent border-2 hover:border-white border-transparent transition-all duration-700 delay-150 ease-in-out"
+          >
+            ongoing programs
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-96 pt-96">KISAN DOESNOT LOVE ME</div>
+
     <!-- FOOTER -->
-    <footer class="w-screen py-4 bg-maincolor mt-4 text-white">
+
+    <footer class="w-12/12 py-4 bg-maincolor mt-4 text-white">
       <div
         class="grid md:grid-cols-4 lg:grid-cols-7 md:gap-y-16 gap-6 w-11/12 lg:w-10/12 mx-auto py-16 border-b border-gray-300"
       >
@@ -135,8 +171,6 @@
             When a child gets access to good food, it can change just about
             everything. Sed do eiusmod tempor incididunt dolore magna aliqua.
           </div>
-
-          <!-- SVG ICONS -->
 
           <div class="flex gap-3 items-center">
             <div class="bg-facebook px-4 py-4">
@@ -199,7 +233,7 @@
         <div class="flex flex-col gap-8">
           <div class="text-2xl font-semibold capitalize">Navigation</div>
           <div class="flex flex-col gap-2 capitalize">
-            <a href="./index.html" >home</a>
+            <a href="./index.html">home</a>
             <a href="./HMTL/About.html">about</a>
             <a href="./HMTL/Whower.html">Who we are?</a>
             <a href="./HMTL/Programs.html">Programs</a>
