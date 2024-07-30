@@ -24,7 +24,7 @@
           colors: {
             maincolor: "#263B5C",
             secondarycolor: "#F15B43",
-            heading:'#263B5C',
+            bgcolor:'#FCF2EB',
             boxcolor: "#65C9BB",
             imgboxcolor: '#F4F2F1',
             facebook: "#3B5998",
@@ -44,9 +44,9 @@
   </style>
 </head>
 
-<body class="w-screen overflow-x-clip">
+<body class="w-screen flex flex-col gap-24   overflow-x-clip">
   <!-- NAVIGATION -->
-  <nav id="navigation " class="relative z-50">
+  <nav id="navigation" class="fixed top-0 left-0 w-full z-50">
     <div class="w-11/12 mx-auto flex items-center justify-between py-5">
       <div class="flex items-center gap-24 text-white">
         <div class="text-3xl font-medium fontuse flex gap-3 items-center justify-center">
@@ -91,8 +91,9 @@
       </div>
     </div>
   </nav>
-
-  <div class="w-screen h-[400px] md:h-[600px] lg:h-lvh absolute top-0 left-0">
+<div>
+  
+  <div class="w-screen h-[400px] md:h-[600px] lg:h-lvh relative ">
     <img src="./Images/Mainimg.jpg" class="h-full w-full object-cover" />
     <div class="bg-black w-full h-full absolute top-0 left-0 bg-opacity-60">
       <div
@@ -113,11 +114,11 @@
   </div>
 
   <!-- MIDDLE SECTIONS -->
-  <div class="mt-96 pt-96">KISAN DOESNOT LOVE ME</div>
 
-  <div class="w-10/12 flex gap-28 mx-auto">
-    <img class="h-96 w-5/12" src="./Images/Mainimg.jpg" alt="" />
-    <div class="w-5/12 flex flex-col gap-2">
+<div class="bg-bgcolor py-14">
+  <div class="w-10/12 h-96 py-6  grid grid-cols-2 gap-24  mx-auto">
+    <img class="h-full w-full object-contain" src="./Images/Mainimg.jpg" alt="" />
+    <div class="grid gap-2">
       <div class="text-boxcolor font-semibold text-lg">Upcoming Program</div>
       <div class="text-4xl text-maincolor font-semibold">
         Donate vitamin B12 supply program
@@ -128,17 +129,19 @@
         enim ad minim veniam, quis nostrud exercitation
       </div>
       <div class="flex gap-5">
-        <div class="w-fit h-fit px-6 py-4 bg-red-500 text-lg text-white font-semibold">
+        <div class="w-fit h-fit px-6 py-4 bg-red-500 text-lg text-white font-semibold border-2 border-red-400">
           Donate Now
         </div>
-        <div class="text-red-400 border border-2 border-red-400 px-6 py-3 text-lg">
+        <div class="w-fit h-fit text-red-400 border-2 border-red-400 px-6 py-4 text-lg">
           View Programs
         </div>
       </div>
     </div>
   </div>
+</div>
+</div>
 
-  <div class="w-10/12 flex gap-10 mx-auto py-32">
+  <!-- <div class="w-10/12 flex gap-10 mx-auto py-32">
     <div class="w-5/12 flex flex-col gap-2">
       <div class="text-boxcolor text-lg font-semibold">About Us</div>
       <div class="text-4xl text-maincolor font-semibold">
@@ -157,74 +160,80 @@
       <img class="h-80 w-50" src="./Images/mainpic.jpg" alt="" />
       <img class="h-80 w-50" src="./Images/mainpic.jpg" alt="" />
     </div>
-  </div>
+  </div> -->
 
-  <div class="flex gap-10">
-    <div class="bg-green-500 w-2/12">
-      <img class="h-72 w-80" src="./Images/mainpic.jpg" alt="" />
-      <div class="bg-imgboxcolor">
-        <div>Help the ecosystems</div>
-        <div>
+  <div class="grid grid-cols-3 gap-5 mx-auto">
+    <!-- SHUT THE FUCKUP TALK WITH ME NICELY -->
+    <div class="bg-imgboxcolor group pb-6">
+      <img class="h-72 w-full object-cover" src="./Images/mainpic.jpg" alt="" />
+      <div class=" flex flex-col gap-4 py-2 px-6">
+        <div class="text-3xl font-semibold group-hover:text-secondarycolor ">Help the ecosystems</div>
+        <div> 
           Sedac odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet
           pulvinar ante start in life and the opportunity to learn.
         </div>
-        <div class="flex gap-5 capitalize">
+        <div class="grid grid-cols-3 gap-4 gap-5 capitalize mt-4">
           <div>
-            <div>$67,512</div>
+            <div class="text-xl text-boxcolor font-semibold">$67,512</div>
             <div>goal</div>
           </div>
           <div>
-            <div>$48,845</div>
+            <div class="text-xl text-boxcolor font-semibold">$48,845</div>
             <div>raised</div>
           </div>
-          <div>Donate</div>
+          <div class="w-full h-full bg-secondarycolor text-white flex items-center justify-center font-semibold border-2 border-transparent
+          group-hover:border-secondarycolor group-hover:text-secondarycolor group-hover:bg-transparent">Donate</div>
         </div>
       </div>
     </div>
 
-    <div class="bg-green-500 w-2/12">
-      <img class="h-72 w-80" src="./Images/mainpic.jpg" alt="" />
-      <div class="bg-imgboxcolor">
-        <div>Help the ecosystems</div>
-        <div>
+    <div class="bg-imgboxcolor group pb-6">
+      <img class="h-72 w-full object-cover" src="./Images/mainpic.jpg" alt="" />
+      <div class=" flex flex-col gap-4 py-2 px-6">
+        <div class="text-3xl font-semibold group-hover:text-secondarycolor ">Help the ecosystems</div>
+        <div> 
           Sedac odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet
           pulvinar ante start in life and the opportunity to learn.
         </div>
-        <div class="flex gap-5  capitalize">
+        <div class="grid grid-cols-3 gap-4 gap-5 capitalize mt-4">
           <div>
-            <div>$67,512</div>
+            <div class="text-xl text-boxcolor font-semibold">$67,512</div>
             <div>goal</div>
           </div>
           <div>
-            <div>$48,845</div>
+            <div class="text-xl text-boxcolor font-semibold">$48,845</div>
             <div>raised</div>
           </div>
-          <div>Donate</div>
+          <div class="w-full h-full bg-secondarycolor text-white flex items-center justify-center font-semibold border-2 border-transparent
+          group-hover:border-secondarycolor group-hover:text-secondarycolor group-hover:bg-transparent">Donate</div>
         </div>
       </div>
     </div>
 
-    <div class="bg-green-500 w-2/12">
-      <img class="h-72 w-80" src="./Images/mainpic.jpg" alt="" />
-      <div class="bg-imgboxcolor">
-        <div>Help the ecosystems</div>
-        <div>
+    <div class="bg-imgboxcolor group pb-6">
+      <img class="h-72 w-full object-cover" src="./Images/mainpic.jpg" alt="" />
+      <div class=" flex flex-col gap-4 py-2 px-6">
+        <div class="text-3xl font-semibold group-hover:text-secondarycolor ">Help the ecosystems</div>
+        <div> 
           Sedac odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet
           pulvinar ante start in life and the opportunity to learn.
         </div>
-        <div class="flex gap-5  capitalize">
+        <div class="grid grid-cols-3 gap-4 gap-5 capitalize mt-4">
           <div>
-            <div>$67,512</div>
+            <div class="text-xl text-boxcolor font-semibold">$67,512</div>
             <div>goal</div>
           </div>
           <div>
-            <div>$48,845</div>
+            <div class="text-xl text-boxcolor font-semibold">$48,845</div>
             <div>raised</div>
           </div>
-          <div>Donate</div>
+          <div class="w-full h-full bg-secondarycolor text-white flex items-center justify-center font-semibold border-2 border-transparent
+          group-hover:border-secondarycolor group-hover:text-secondarycolor group-hover:bg-transparent">Donate</div>
         </div>
       </div>
     </div>
+
+
   </div>
 
 
