@@ -1,64 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet" />
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          height: {
-            lvh: "120lvh",
-          },
-          lineHeight: {
-            8: "3.5rem",
-          },
-          colors: {
-            maincolor: "#263B5C",
-            secondarycolor: "#F15B43",
-            bgcolor:'#FCF2EB',
-            boxcolor: "#65C9BB",
-            imgboxcolor: '#F4F2F1',
-            facebook: "#3B5998",
-            instagram: "#405DE6",
-            linkdin: "#0077B5",
-            youtube: " #FF0000",
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            height: {
+              lvh: "120lvh",
+            },
+            lineHeight: {
+              8: "3.5rem",
+            },
+            colors: {
+              maincolor: "#263B5C",
+              secondarycolor: "#F15B43",
+              bgcolor: "#FCF2EB",
+              boxcolor: "#65C9BB",
+              imgboxcolor: "#F4F2F1",
+              facebook: "#3B5998",
+              instagram: "#405DE6",
+              linkdin: "#0077B5",
+              youtube: " #FF0000",
+            },
           },
         },
-      },
-    };
-  </script>
-  <title>CHARITE</title>
-  <style>
-    .fontuse {
-      font-family: "Playwrite BE VLG", cursive;
-    }
-  </style>
-</head>
+      };
+    </script>
+    <title>CHARITE</title>
+    <style>
+      .fontuse {
+        font-family: "Playwrite BE VLG", cursive;
+      }
+    </style>
+  </head>
 
-<body class="w-screen flex flex-col gap-24   overflow-x-clip">
-  <!-- NAVIGATION -->
-  <nav id="navigation" class="fixed top-0 left-0 w-full z-50">
-    <div class="w-11/12 mx-auto flex items-center justify-between py-5">
-      <div class="flex items-center gap-24 text-white">
-        <div class="text-3xl font-medium fontuse flex gap-3 items-center justify-center">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-secondarycolor" viewBox="0 0 14 14">
-            <path fill="currentColor" fill-rule="evenodd"
-              d="m5.385 5.242l1.404-1.27a3 3 0 0 1 2.406-.747l1.858.246l2.578-1.393a.25.25 0 0 1 .369.22v4.738a1 1 0 0 1-.418.813L11.846 9.09l-1.88-1.576a2.5 2.5 0 0 0 .966-.63a.625.625 0 1 0-.9-.869c-.185.193-.4.317-.652.366c-.219.043-.498.036-.849-.072l-.446-.375L6.84 6.943a1.12 1.12 0 0 1-1.455-1.701m-.838-.928l1.008-.911a3.064 3.064 0 0 0-1.33-.063l-1.835.318L.376 2.574A.255.255 0 0 0 0 2.799v4.236c0 .338.167.654.446.844l5.455 3.719a2.043 2.043 0 0 0 2.334-.023l2.506-1.779l-2.67-2.24l-.445.358a2.37 2.37 0 0 1-3.08-3.6Z"
-              clip-rule="evenodd" />
-          </svg>
-          Charity
+  <body class="w-screen flex flex-col gap-24 overflow-x-clip">
+    <!-- NAVIGATION -->
+    <nav id="navigation" class="fixed top-0 left-0 w-full z-50">
+      <div class="w-11/12 mx-auto flex items-center justify-between py-5">
+        <div class="flex items-center gap-24 text-white">
+          <div
+            class="text-3xl font-medium fontuse flex gap-3 items-center justify-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-16 w-16 text-secondarycolor"
+              viewBox="0 0 14 14"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="m5.385 5.242l1.404-1.27a3 3 0 0 1 2.406-.747l1.858.246l2.578-1.393a.25.25 0 0 1 .369.22v4.738a1 1 0 0 1-.418.813L11.846 9.09l-1.88-1.576a2.5 2.5 0 0 0 .966-.63a.625.625 0 1 0-.9-.869c-.185.193-.4.317-.652.366c-.219.043-.498.036-.849-.072l-.446-.375L6.84 6.943a1.12 1.12 0 0 1-1.455-1.701m-.838-.928l1.008-.911a3.064 3.064 0 0 0-1.33-.063l-1.835.318L.376 2.574A.255.255 0 0 0 0 2.799v4.236c0 .338.167.654.446.844l5.455 3.719a2.043 2.043 0 0 0 2.334-.023l2.506-1.779l-2.67-2.24l-.445.358a2.37 2.37 0 0 1-3.08-3.6Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            Charity
+          </div>
+
+          <div class="lg:flex hidden items-center gap-8 capitalize">
+            <a href="./index.html">home</a>
+            <a href="./HMTL/About.html">about</a>
+            <a href="./HMTL/Whower.html">Who we are?</a>
+            <a href="./HMTL/Programs.html">Programs</a>
+            <a href="./HMTL/Contact.html">Contact</a>
+          </div>
         </div>
-
-        <div class="lg:flex hidden items-center gap-8 capitalize">
+        <div class="w-fit h-fit flex lg:hidden" onclick="Sidebar()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-10 w-10 text-white"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z"
+            />
+          </svg>
+        </div>
+        <div
+          class="cursor-pointer transition-all duration-700 delay-150 ease-in-out w-fit h-fit px-6 py-4 text-white bg-secondarycolor capitalize lg:flex hidden items-center justify-center gap-2 hover:bg-transparent border-2 border-transparent hover:border-white"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="`w-6 h-6"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z"
+            />
+          </svg>
+          make a donation
+        </div>
+      </div>
+      <div
+        id="sidebar"
+        class="w-44 h-full fixed top-24 mt-2 transition-all duration-500 delay-150 ease-in-out translate-x-44 shadow-md border-l p-6 right-0 bg-white text-maincolor"
+      >
+        <div class="flex flex-col gap-8 font-semibold capitalize">
           <a href="./index.html">home</a>
           <a href="./HMTL/About.html">about</a>
           <a href="./HMTL/Whower.html">Who we are?</a>
@@ -66,82 +117,74 @@
           <a href="./HMTL/Contact.html">Contact</a>
         </div>
       </div>
-      <div class="w-fit h-fit flex lg:hidden" onclick="Sidebar()">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" viewBox="0 0 24 24">
-          <path fill="currentColor" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z" />
-        </svg>
-      </div>
-      <div
-        class="cursor-pointer transition-all duration-700 delay-150 ease-in-out w-fit h-fit px-6 py-4 text-white bg-secondarycolor capitalize lg:flex hidden items-center justify-center gap-2 hover:bg-transparent border-2 border-transparent hover:border-white">
-        <svg xmlns="http://www.w3.org/2000/svg" class="`w-6 h-6" viewBox="0 0 24 24">
-          <path fill="currentColor"
-            d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z" />
-        </svg>
-        make a donation
-      </div>
-    </div>
-    <div id="sidebar"
-      class="w-44 h-full fixed top-24 mt-2 transition-all duration-500 delay-150 ease-in-out translate-x-44 shadow-md border-l p-6 right-0 bg-white text-maincolor">
-      <div class="flex flex-col gap-8 font-semibold capitalize">
-        <a href="./index.html">home</a>
-        <a href="./HMTL/About.html">about</a>
-        <a href="./HMTL/Whower.html">Who we are?</a>
-        <a href="./HMTL/Programs.html">Programs</a>
-        <a href="./HMTL/Contact.html">Contact</a>
-      </div>
-    </div>
-  </nav>
-<div>
-  
-  <div class="w-screen h-[400px] md:h-[600px] lg:h-lvh relative ">
-    <img src="./Images/Mainimg.jpg" class="h-full w-full object-cover" />
-    <div class="bg-black w-full h-full absolute top-0 left-0 bg-opacity-60">
-      <div
-        class="w-10/12 h-full mx-auto flex flex-col text-white justify-center items-center md:items-start pt-4 gap-4 lg:pt-0 lg:gap-8">
-        <div class="text-xl text-center md:text-left md:text-5xl font-bold lg:w-5/12">
-          Give me a helping hand to those who need it!
-        </div>
-        <div class="text-center lg:text-left lg:w-4/12 lg:text-xl font-semibold">
-          When a child gets access to good food, it can changejust about
-          everything.
-        </div>
-        <div
-          class="capitalize cursor-pointer bg-boxcolor w-fit h-fit p-2 lg:p-5 hover:bg-transparent border-2 hover:border-white border-transparent transition-all duration-700 delay-150 ease-in-out">
-          ongoing programs
+    </nav>
+    <div>
+      <div class="w-screen h-[400px] md:h-[600px] lg:h-lvh relative">
+        <img src="./Images/Mainimg.jpg" class="h-full w-full object-cover" />
+        <div class="bg-black w-full h-full absolute top-0 left-0 bg-opacity-60">
+          <div
+            class="w-10/12 h-full mx-auto flex flex-col text-white justify-center items-center md:items-start pt-4 gap-4 lg:pt-0 lg:gap-8"
+          >
+            <div
+              class="text-xl text-center md:text-left md:text-5xl font-bold lg:w-5/12"
+            >
+              Give me a helping hand to those who need it!
+            </div>
+            <div
+              class="text-center lg:text-left lg:w-4/12 lg:text-xl font-semibold"
+            >
+              When a child gets access to good food, it can changejust about
+              everything.
+            </div>
+            <div
+              class="capitalize cursor-pointer bg-boxcolor w-fit h-fit p-2 lg:p-5 hover:bg-transparent border-2 hover:border-white border-transparent transition-all duration-700 delay-150 ease-in-out"
+            >
+              ongoing programs
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <!-- MIDDLE SECTIONS -->
+      <!-- MIDDLE SECTIONS -->
 
-<div class="bg-bgcolor py-14">
-  <div class="w-10/12 h-96 py-6  grid grid-cols-2 gap-24  mx-auto">
-    <img class="h-full w-full object-contain" src="./Images/Homelessness.jpg" alt="" />
-    <div class="grid gap-2">
-      <div class="text-boxcolor font-semibold text-lg">Upcoming Program</div>
-      <div class="text-4xl text-maincolor font-semibold">
-        Donate vitamin B12 supply program
-      </div>
-      <div class="py-3">
-        When a child gets access to good food, it can change just about
-        everything. Sed do eiusmod tempor incididunt dolore magna aliqua. Ut
-        enim ad minim veniam, quis nostrud exercitation
-      </div>
-      <div class="flex gap-5">
-        <div class="w-fit h-fit px-6 py-4 bg-red-500 text-lg text-white font-semibold border-2 border-red-400">
-          Donate Now
-        </div>
-        <div class="w-fit h-fit text-red-400 border-2 border-red-400 px-6 py-4 text-lg">
-          View Programs
+      <div class="bg-bgcolor py-14">
+        <div class="w-10/12 h-96 py-6 grid grid-cols-2 gap-24 mx-auto">
+          <img
+            class="h-full w-full object-contain"
+            src="./Images/Homelessness.jpg"
+            alt=""
+          />
+          <div class="grid gap-2">
+            <div class="text-boxcolor font-semibold text-lg">
+              Upcoming Program
+            </div>
+            <div class="text-4xl text-maincolor font-semibold">
+              Donate vitamin B12 supply program
+            </div>
+            <div class="py-3">
+              When a child gets access to good food, it can change just about
+              everything. Sed do eiusmod tempor incididunt dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation
+            </div>
+            <div class="flex gap-5">
+              <div
+                class="cursor-pointer h-fit px-6 py-4 bg-red-500 text-lg text-white font-semibold border-2 border-red-400
+                hover:bg-transparent border-2 border-transparent hover:border-secondarycolor hover:text-secondarycolor"
+              >
+                Donate Now
+              </div>
+              <div
+                class="cursor-pointer h-fit text-red-400 border-2 border-red-400 px-6 py-4 text-lg"
+              >
+                View Programs
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-</div>
 
-  <!-- <div class="w-10/12 flex gap-10 mx-auto py-32">
+    <!-- <div class="w-10/12 flex gap-10 mx-auto py-32">
     <div class="w-5/12 flex flex-col gap-2">
       <div class="text-boxcolor text-lg font-semibold">About Us</div>
       <div class="text-4xl text-maincolor font-semibold">
@@ -162,101 +205,135 @@
     </div>
   </div> -->
 
-  <div class="grid grid-cols-3 gap-5 mx-auto">
-    <div class="bg-imgboxcolor group pb-6">
-      <img class="h-72 w-full object-cover" src="./Images/Aaaa.jpg" alt="" />
-      <div class=" flex flex-col gap-4 py-2 px-6">
-        <div class="text-3xl font-semibold group-hover:text-secondarycolor ">Donation</div>
-        <div> 
-          Every contribution, no matter the size, makes a significant impact.
-          Join our monthly giving program and become a Sustaining Supporter.
-           
+    <div class="grid grid-cols-3 gap-5 mx-auto">
+      <div class="bg-imgboxcolor group pb-6">
+        <img class="h-72 w-full object-cover" src="./Images/Aaaa.jpg" alt="" />
+        <div class="flex flex-col gap-4 py-2 px-6">
+          <div
+            class="text-3xl font-semibold group-hover:text-secondarycolor cursor-pointer"
+          >
+            Donation
+          </div>
+          <div>
+            Every contribution, no matter the size, makes a significant impact.
+            Join our monthly giving program and become a Sustaining Supporter.
+          </div>
+          <div class="grid grid-cols-3 gap-4 gap-5 capitalize mt-4">
+            <div>
+              <div class="text-xl text-boxcolor font-semibold">$67,512</div>
+              <div>goal</div>
+            </div>
+            <div>
+              <div class="text-xl text-boxcolor font-semibold">$48,845</div>
+              <div>raised</div>
+            </div>
+            <div
+              class="cursor-pointer h-full bg-secondarycolor text-white flex items-center justify-center font-semibold border-2 border-transparent group-hover:border-secondarycolor group-hover:text-secondarycolor group-hover:bg-transparent"
+            >
+              Donate
+            </div>
+          </div>
         </div>
-        <div class="grid grid-cols-3 gap-4 gap-5 capitalize mt-4">
-          <div>
-            <div class="text-xl text-boxcolor font-semibold">$67,512</div>
-            <div>goal</div>
+      </div>
+
+      <div class="bg-imgboxcolor group pb-6">
+        <img
+          class="h-72 w-full object-cover"
+          src="./Images/Medical.jpg"
+          alt=""
+        />
+        <div class="flex flex-col gap-4 py-2 px-6">
+          <div
+            class="text-3xl font-semibold group-hover:text-secondarycolor cursor-pointer"
+          >
+            Health Services
           </div>
           <div>
-            <div class="text-xl text-boxcolor font-semibold">$48,845</div>
-            <div>raised</div>
+            Our health services are designed to meet the needs of underserved
+            communities, ensuring everyone has the opportunity to live a healthy
+            life.
           </div>
-          <div class="w-full h-full bg-secondarycolor text-white flex items-center justify-center font-semibold border-2 border-transparent
-          group-hover:border-secondarycolor group-hover:text-secondarycolor group-hover:bg-transparent">Donate</div>
+          <div class="grid grid-cols-3 gap-4 gap-5 capitalize mt-4">
+            <div>
+              <div class="text-xl text-boxcolor font-semibold">$67,512</div>
+              <div>goal</div>
+            </div>
+            <div>
+              <div class="text-xl text-boxcolor font-semibold">$48,845</div>
+              <div>raised</div>
+            </div>
+            <div
+              class="cursor-pointer h-full bg-secondarycolor text-white flex items-center justify-center font-semibold border-2 border-transparent group-hover:border-secondarycolor group-hover:text-secondarycolor group-hover:bg-transparent"
+            >
+              Donate
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-imgboxcolor group pb-6">
+        <img
+          class="h-72 w-full object-cover"
+          src="./Images/Medicine.jpg"
+          alt=""
+        />
+        <div class="flex flex-col gap-4 py-2 px-6">
+          <div
+            class="text-3xl font-semibold group-hover:text-secondarycolor cursor-pointer"
+          >
+            Volunteer
+          </div>
+          <div>
+            Join a community of passionate individuals who share your commitment
+            to making a difference. Help us run our various programs.
+          </div>
+          <div class="grid grid-cols-3 gap-4 gap-5 capitalize mt-4">
+            <div>
+              <div class="text-xl text-boxcolor font-semibold">$67,512</div>
+              <div>goal</div>
+            </div>
+            <div>
+              <div class="text-xl text-boxcolor font-semibold">$48,845</div>
+              <div>raised</div>
+            </div>
+            <div
+              class="cursor-pointer h-full bg-secondarycolor text-white flex items-center justify-center font-semibold border-2 border-transparent group-hover:border-secondarycolor group-hover:text-secondarycolor group-hover:bg-transparent"
+            >
+              Donate
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="bg-imgboxcolor group pb-6">
-      <img class="h-72 w-full object-cover" src="./Images/Medical.jpg" alt="" />
-      <div class=" flex flex-col gap-4 py-2 px-6">
-        <div class="text-3xl font-semibold group-hover:text-secondarycolor"> Health Services </div>
-        <div> 
-          Our health services are designed to meet the needs of underserved communities, ensuring everyone has the opportunity to live a healthy life.
-        </div>
-        <div class="grid grid-cols-3 gap-4 gap-5 capitalize mt-4">
-          <div>
-            <div class="text-xl text-boxcolor font-semibold">$67,512</div>
-            <div>goal</div>
+    <div class="py-4">
+      <div class="w-10/12 h-96 py-6 grid grid-cols-2 gap-24 mx-auto">
+        <img
+          class="h-full w-full object-contain"
+          src="./Images/Volunteer .jpg"
+          alt=""
+        />
+        <div class="grid gap-2">
+          <div class="text-boxcolor font-semibold text-lg">Helping today</div>
+          <div class="text-4xl text-maincolor font-semibold">
+            What we are doing
           </div>
-          <div>
-            <div class="text-xl text-boxcolor font-semibold">$48,845</div>
-            <div>raised</div>
+          <div class="py-3">
+            When a child gets access to good food, it can change just about
+            everything. Sed do eiusmod tempor incididunt dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation
           </div>
-          <div class="w-full h-full bg-secondarycolor text-white flex items-center justify-center font-semibold border-2 border-transparent
-          group-hover:border-secondarycolor group-hover:text-secondarycolor group-hover:bg-transparent">Donate</div>
-        </div>
-      </div>
-    </div>
 
-    <div class="bg-imgboxcolor group pb-6">
-      <img class="h-72 w-full object-cover" src="./Images/Medicine.jpg" alt="" />
-      <div class=" flex flex-col gap-4 py-2 px-6">
-        <div class="text-3xl font-semibold group-hover:text-secondarycolor ">Volunteer</div>
-        <div> 
-          Join a community of passionate individuals who share your commitment to making a difference.
-          Help us run our various programs.
-           
-           
-        </div>
-        <div class="grid grid-cols-3 gap-4 gap-5 capitalize mt-4">
-          <div>
-            <div class="text-xl text-boxcolor font-semibold">$67,512</div>
-            <div>goal</div>
-          </div>
-          <div>
-            <div class="text-xl text-boxcolor font-semibold">$48,845</div>
-            <div>raised</div>
-          </div>
-          <div class="w-full h-full bg-secondarycolor text-white flex items-center justify-center font-semibold border-2 border-transparent
-          group-hover:border-secondarycolor group-hover:text-secondarycolor group-hover:bg-transparent">Donate</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="py-4">
-    <div class="w-10/12 h-96 py-6 grid grid-cols-2 gap-24  mx-auto">
-      <img class="h-full w-full object-contain" src="./Images/Volunteer .jpg" alt="" />
-      <div class="grid gap-2">
-        <div class="text-boxcolor font-semibold text-lg">Helping today</div>
-        <div class="text-4xl text-maincolor font-semibold">
-          What we are doing
-        </div>
-        <div class="py-3">
-          When a child gets access to good food, it can change just about
-          everything. Sed do eiusmod tempor incididunt dolore magna aliqua. Ut
-          enim ad minim veniam, quis nostrud exercitation
-        </div>
-      
-          <div class="w-fit h-fit text-red-400 border-2 border-red-400 px-6 py-4 text-lg">
+          <div
+            class="cursor-pointer w-fit h-fit text-red-400 border-2 border-red-400 px-6 py-4 text-lg"
+          >
             Join Us Today
           </div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- <div class="w-7/12 flex gap-28 mx-auto py-10">
+    <!-- <div class="w-7/12 flex gap-28 mx-auto py-10">
     <img class="h-96 w-6/12" src="./Images/Volunteer .jpg" alt="" />
     <div class="w-4/12 flex flex-col gap-2 ">
       <div class="text-boxcolor font-semibold text-lg">Helping today</div>
@@ -274,186 +351,268 @@
     </div>
   </div> -->
 
-  <div class=" bg-secondarycolor text-white py-20">
-    <div class="text-center">
-      <div>Helping today</div>
-      <div>How we help people</div>
+    <div class="bg-secondarycolor text-white py-20">
+      <div class="text-center">
+        <div>Helping today</div>
+        <div>How we help people</div>
+      </div>
+
+      <div class="w-10/12 mx-auto flex gap-5 text-center pt-10">
+        <div class="flex flex-col gap-2">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-12 h-12 text-white"
+              viewBox="0 0 1024 1024"
+            >
+              <path
+                fill="currentColor"
+                d="M128 352.576V352a288 288 0 0 1 491.072-204.224a192 192 0 0 1 274.24 204.48a64 64 0 0 1 57.216 74.24C921.6 600.512 850.048 710.656 736 756.992V800a96 96 0 0 1-96 96H384a96 96 0 0 1-96-96v-43.008c-114.048-46.336-185.6-156.48-214.528-330.496A64 64 0 0 1 128 352.64zm64-.576h64a160 160 0 0 1 320 0h64a224 224 0 0 0-448 0m128 0h192a96 96 0 0 0-192 0m439.424 0h68.544A128.256 128.256 0 0 0 704 192c-15.36 0-29.952 2.688-43.52 7.616c11.328 18.176 20.672 37.76 27.84 58.304A64.128 64.128 0 0 1 759.424 352M672 768H352v32a32 32 0 0 0 32 32h256a32 32 0 0 0 32-32zm-342.528-64h365.056c101.504-32.64 165.76-124.928 192.896-288H136.576c27.136 163.072 91.392 255.36 192.896 288"
+              />
+            </svg>
+          </div>
+          <div class="cursor-pointer font-bold text-2xl">Food</div>
+          <div>
+            Odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet
+            pulvinar ante employees and organizations to support.
+          </div>
+        </div>
+        <div class="w-3/12">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-12 h-12 text-white"
+            viewBox="0 0 24 24"
+          >
+            <g fill="none">
+              <path
+                fill="currentColor"
+                d="m8.962 19.379l-.473.582zM12 5.574l-.548.512a.75.75 0 0 0 1.096 0zm3.038 13.805l.473.582zM12 21v-.75zm-2.566-2.204c-1.45-1.176-3.142-2.719-4.466-4.408c-1.339-1.707-2.218-3.46-2.218-5.07h-1.5c0 2.117 1.13 4.202 2.537 5.996c1.422 1.813 3.21 3.436 4.702 4.647zM2.75 9.318c0-2.905 1.268-4.7 2.836-5.315c1.565-.613 3.754-.175 5.866 2.083l1.096-1.024c-2.388-2.554-5.199-3.36-7.509-2.456C2.732 3.51 1.25 5.992 1.25 9.318zM15.51 19.96c1.493-1.211 3.281-2.834 4.703-4.647c1.407-1.794 2.537-3.879 2.537-5.997h-1.5c0 1.612-.88 3.364-2.218 5.071c-1.324 1.689-3.016 3.232-4.466 4.408zm7.24-10.644c0-3.325-1.482-5.807-3.79-6.71c-2.31-.905-5.12-.1-7.508 2.455l1.096 1.024c2.112-2.258 4.301-2.696 5.866-2.083c1.568.614 2.836 2.41 2.836 5.314zM8.49 19.961c1.27 1.032 2.152 1.789 3.51 1.789v-1.5c-.723 0-1.173-.324-2.566-1.454zm6.076-1.165c-1.393 1.13-1.843 1.454-2.566 1.454v1.5c1.358 0 2.24-.757 3.51-1.789z"
+              />
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="1.5"
+                d="M18.5 9h-2m0 0h-2m2 0V7m0 2v2"
+              />
+            </g>
+          </svg>
+          <div class="cursor-pointer font-bold text-2xl">Health</div>
+          <div>
+            Odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet
+            pulvinar ante employees and organizations to support.
+          </div>
+        </div>
+        <div class="w-3/12">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-12 h-12 text-white"
+              viewBox="0 0 14 14"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M7 6.546c-.748-.553-1.869-1.52-5.083-1.52v6.924c3.214 0 4.335.967 5.083 1.52zm0 0c.748-.553 1.869-1.52 5.083-1.52v6.924c-3.214 0-4.335.967-5.083 1.52zM10.763.521H4.086a1 1 0 0 0-.528.15L1.801 1.765l1.757 1.092a1 1 0 0 0 .528.15h6.677a1.243 1.243 0 1 0 0-2.485ZM8.986.575v2.432"
+              />
+            </svg>
+          </div>
+          <div class="cursor-pointer font-bold text-2xl">Education</div>
+          <div>
+            Odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet
+            pulvinar ante employees and organizations to support.
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="w-10/12 mx-auto flex gap-5 text-center pt-10">
+    <div class="w-10/12 flex gap-10 mx-auto py-32">
       <div class="flex flex-col gap-2">
-        <div>ICON</div>
-        <div>pure food and water </div>
-        <div>
-          Odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet pulvinar ante employees and organizations to
-          support.
+        <div class="text-boxcolor text-lg font-semibold">News</div>
+        <div class="text-4xl text-maincolor font-semibold">Latest Blog</div>
+        <div class="flex gap-3 pt-5">
+          <div class="cursor-pointer h-fit p-3 border-2 border-gray-300">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 text-gray-500"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="M17.5 17.5L9.25 12l8.25-5.5l-1-1.5L6 12l10.5 7z"
+              />
+            </svg>
+          </div>
+          <div class="cursor-pointer h-fit p-3 border-2 border-gray-300">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 text-gray-500"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="m6.5 17.5l8.25-5.5L6.5 6.5l1-1.5L18 12L7.5 19z"
+              />
+            </svg>
+          </div>
         </div>
       </div>
-      <div class="w-3/12">
-        <div>ICON</div>
-        <div>health and education </div>
+
+      <div class="w-11/12 flex gap-5 bg-red-100">
         <div>
-          Odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet pulvinar ante employees and organizations to
-          support.
+          <img class="h-60 w-50" src="./Images/Handlogo.jpg" alt="" />
+          <div class="w-9/12 bg-imgboxcolor">
+            <div>Help the ecosystems</div>
+            <div>
+              When a child gets access to good food, it can change just about
+              everything. Sed do eiusmod tempor incididunt dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation
+            </div>
+            <div>read more</div>
+          </div>
         </div>
-      </div>
-      <div class="w-3/12">
-        <div>ICON</div>
-        <div>education </div>
         <div>
-          Odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet pulvinar ante employees and organizations to
-          support.
+          <img class="h-60 w-50" src="./Images/News.jpg" alt="" />
+          <div class="w-9/12 bg-imgboxcolor">
+            <div>Help the ecosystems</div>
+            <div>
+              When a child gets access to good food, it can change just about
+              everything. Sed do eiusmod tempor incididunt dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation
+            </div>
+            <div>read more</div>
+          </div>
         </div>
       </div>
     </div>
 
-  </div>
+    <!-- FOOTER -->
 
-
-
-
-  <div class="w-10/12 flex gap-10 mx-auto py-32">
-    <div class=" flex flex-col gap-2">
-      <div class="text-boxcolor text-lg font-semibold">News</div>
-      <div class="text-4xl text-maincolor font-semibold">
-        Latest Blog
-      </div>
-      <div class="flex gap-3 pt-5">
-        <div class="w-fit h-fit p-3 border-2 border-gray-300">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" viewBox="0 0 24 24">
-            <path fill="currentColor" fill-rule="evenodd" d="M17.5 17.5L9.25 12l8.25-5.5l-1-1.5L6 12l10.5 7z" />
-          </svg>
-        </div>
-        <div class="w-fit h-fit p-3 border-2 border-gray-300">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" viewBox="0 0 24 24">
-            <path fill="currentColor" fill-rule="evenodd" d="m6.5 17.5l8.25-5.5L6.5 6.5l1-1.5L18 12L7.5 19z" />
-          </svg>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="w-11/12 flex  gap-5 bg-red-100">
-      <div>
-        <img class="h-60 w-50" src="./Images/Handlogo.jpg" alt="" />
-        <div class="w-9/12 bg-imgboxcolor">
-          <div>Help the ecosystems</div>
-          <div>When a child gets access to good food, it can change just about everything. Sed do eiusmod tempor
-            incididunt
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</div>
-          <div>read more</div>
-        </div>
-      </div>
-      <div>
-        <img class="h-60 w-50" src="./Images/News.jpg" alt="" />
-        <div class="w-9/12 bg-imgboxcolor">
-          <div>Help the ecosystems</div>
-          <div>When a child gets access to good food, it can change just about everything. Sed do eiusmod tempor
-            incididunt
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</div>
-          <div>read more</div>
-        </div>
-      </div>
-
-
-
-    </div>
-  </div>
-
-
-
-
-
-  <!-- FOOTER -->
-
-  <footer class="w-12/12 py-4 bg-maincolor mt-4 text-white">
-    <div
-      class="grid md:grid-cols-4 lg:grid-cols-7 md:gap-y-16 gap-6 w-11/12 lg:w-10/12 mx-auto py-16 border-b border-gray-300">
-      <div class="flex flex-col col-span-2 gap-8">
-        <div class="text-3xl font-medium fontuse flex gap-3 items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-secondarycolor" viewBox="0 0 14 14">
-            <path fill="currentColor" fill-rule="evenodd"
-              d="m5.385 5.242l1.404-1.27a3 3 0 0 1 2.406-.747l1.858.246l2.578-1.393a.25.25 0 0 1 .369.22v4.738a1 1 0 0 1-.418.813L11.846 9.09l-1.88-1.576a2.5 2.5 0 0 0 .966-.63a.625.625 0 1 0-.9-.869c-.185.193-.4.317-.652.366c-.219.043-.498.036-.849-.072l-.446-.375L6.84 6.943a1.12 1.12 0 0 1-1.455-1.701m-.838-.928l1.008-.911a3.064 3.064 0 0 0-1.33-.063l-1.835.318L.376 2.574A.255.255 0 0 0 0 2.799v4.236c0 .338.167.654.446.844l5.455 3.719a2.043 2.043 0 0 0 2.334-.023l2.506-1.779l-2.67-2.24l-.445.358a2.37 2.37 0 0 1-3.08-3.6Z"
-              clip-rule="evenodd" />
-          </svg>
-          Charity
-        </div>
-        <div>
-          When a child gets access to good food, it can change just about
-          everything. Sed do eiusmod tempor incididunt dolore magna aliqua.
-        </div>
-
-        <div class="flex gap-3 items-center">
-          <div class="bg-facebook px-4 py-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24">
-              <path fill="currentColor"
-                d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z" />
+    <footer class="w-12/12 py-4 bg-maincolor mt-4 text-white">
+      <div
+        class="grid md:grid-cols-4 lg:grid-cols-7 md:gap-y-16 gap-6 w-11/12 lg:w-10/12 mx-auto py-16 border-b border-gray-300"
+      >
+        <div class="flex flex-col col-span-2 gap-8">
+          <div class=" cursor-pointer font-medium fontuse flex gap-3 items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-16 w-16 text-secondarycolor"
+              viewBox="0 0 14 14"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                d="m5.385 5.242l1.404-1.27a3 3 0 0 1 2.406-.747l1.858.246l2.578-1.393a.25.25 0 0 1 .369.22v4.738a1 1 0 0 1-.418.813L11.846 9.09l-1.88-1.576a2.5 2.5 0 0 0 .966-.63a.625.625 0 1 0-.9-.869c-.185.193-.4.317-.652.366c-.219.043-.498.036-.849-.072l-.446-.375L6.84 6.943a1.12 1.12 0 0 1-1.455-1.701m-.838-.928l1.008-.911a3.064 3.064 0 0 0-1.33-.063l-1.835.318L.376 2.574A.255.255 0 0 0 0 2.799v4.236c0 .338.167.654.446.844l5.455 3.719a2.043 2.043 0 0 0 2.334-.023l2.506-1.779l-2.67-2.24l-.445.358a2.37 2.37 0 0 1-3.08-3.6Z"
+                clip-rule="evenodd"
+              />
             </svg>
+            Charity
           </div>
-          <div class="bg-linkdin px-4 py-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24">
-              <path fill="currentColor"
-                d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z" />
-            </svg>
-          </div>
-          <div class="bg-instagram px-4 py-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" viewBox="0 0 24 24">
-              <path fill="currentColor"
-                d="M12.001 9a3 3 0 1 0 0 6a3 3 0 0 0 0-6m0-2a5 5 0 1 1 0 10a5 5 0 0 1 0-10m6.5-.25a1.25 1.25 0 0 1-2.5 0a1.25 1.25 0 0 1 2.5 0M12.001 4c-2.474 0-2.878.007-4.029.058c-.784.037-1.31.142-1.798.332a2.9 2.9 0 0 0-1.08.703a2.9 2.9 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.007 9.075 4 9.461 4 12c0 2.475.007 2.878.058 4.029c.037.783.142 1.31.331 1.797c.17.435.37.748.702 1.08c.337.336.65.537 1.08.703c.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.475 0 2.878-.007 4.029-.058c.782-.037 1.308-.142 1.797-.331a2.9 2.9 0 0 0 1.08-.703c.337-.336.538-.649.704-1.08c.19-.492.296-1.018.332-1.8c.052-1.103.058-1.49.058-4.028c0-2.474-.007-2.878-.058-4.029c-.037-.782-.143-1.31-.332-1.798a2.9 2.9 0 0 0-.703-1.08a2.9 2.9 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.926 4.006 14.54 4 12 4m0-2c2.717 0 3.056.01 4.123.06c1.064.05 1.79.217 2.427.465c.66.254 1.216.598 1.772 1.153a4.9 4.9 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.047 1.066.06 1.405.06 4.122s-.01 3.056-.06 4.122s-.218 1.79-.465 2.428a4.9 4.9 0 0 1-1.153 1.772a4.9 4.9 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465c-1.067.047-1.406.06-4.123.06s-3.056-.01-4.123-.06c-1.064-.05-1.789-.218-2.427-.465a4.9 4.9 0 0 1-1.772-1.153a4.9 4.9 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.012 15.056 2 14.717 2 12s.01-3.056.06-4.122s.217-1.79.465-2.428a4.9 4.9 0 0 1 1.153-1.772A4.9 4.9 0 0 1 5.45 2.525c.637-.248 1.362-.415 2.427-.465C8.945 2.013 9.284 2 12.001 2" />
-            </svg>
+          <div>
+            When a child gets access to good food, it can change just about
+            everything. Sed do eiusmod tempor incididunt dolore magna aliqua.
           </div>
 
-          <div class="bg-youtube px-4 py-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24">
-              <g fill="none" fill-rule="evenodd">
+          <div class="flex gap-3 items-center">
+            <div class="bg-facebook px-4 py-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                viewBox="0 0 24 24"
+              >
                 <path
-                  d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                <path fill="currentColor"
-                  d="M12 4c.855 0 1.732.022 2.582.058l1.004.048l.961.057l.9.061l.822.064a3.8 3.8 0 0 1 3.494 3.423l.04.425l.075.91c.07.943.122 1.971.122 2.954s-.052 2.011-.122 2.954l-.075.91l-.04.425a3.8 3.8 0 0 1-3.495 3.423l-.82.063l-.9.062l-.962.057l-1.004.048A62 62 0 0 1 12 20a62 62 0 0 1-2.582-.058l-1.004-.048l-.961-.057l-.9-.062l-.822-.063a3.8 3.8 0 0 1-3.494-3.423l-.04-.425l-.075-.91A41 41 0 0 1 2 12c0-.983.052-2.011.122-2.954l.075-.91l.04-.425A3.8 3.8 0 0 1 5.73 4.288l.821-.064l.9-.061l.962-.057l1.004-.048A62 62 0 0 1 12 4m-2 5.575v4.85c0 .462.5.75.9.52l4.2-2.425a.6.6 0 0 0 0-1.04l-4.2-2.424a.6.6 0 0 0-.9.52Z" />
-              </g>
-            </svg>
+                  fill="currentColor"
+                  d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"
+                />
+              </svg>
+            </div>
+            <div class="bg-linkdin px-4 py-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z"
+                />
+              </svg>
+            </div>
+            <div class="bg-instagram px-4 py-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                viewBox="0 0 24 24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12.001 9a3 3 0 1 0 0 6a3 3 0 0 0 0-6m0-2a5 5 0 1 1 0 10a5 5 0 0 1 0-10m6.5-.25a1.25 1.25 0 0 1-2.5 0a1.25 1.25 0 0 1 2.5 0M12.001 4c-2.474 0-2.878.007-4.029.058c-.784.037-1.31.142-1.798.332a2.9 2.9 0 0 0-1.08.703a2.9 2.9 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.007 9.075 4 9.461 4 12c0 2.475.007 2.878.058 4.029c.037.783.142 1.31.331 1.797c.17.435.37.748.702 1.08c.337.336.65.537 1.08.703c.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.475 0 2.878-.007 4.029-.058c.782-.037 1.308-.142 1.797-.331a2.9 2.9 0 0 0 1.08-.703c.337-.336.538-.649.704-1.08c.19-.492.296-1.018.332-1.8c.052-1.103.058-1.49.058-4.028c0-2.474-.007-2.878-.058-4.029c-.037-.782-.143-1.31-.332-1.798a2.9 2.9 0 0 0-.703-1.08a2.9 2.9 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.926 4.006 14.54 4 12 4m0-2c2.717 0 3.056.01 4.123.06c1.064.05 1.79.217 2.427.465c.66.254 1.216.598 1.772 1.153a4.9 4.9 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.047 1.066.06 1.405.06 4.122s-.01 3.056-.06 4.122s-.218 1.79-.465 2.428a4.9 4.9 0 0 1-1.153 1.772a4.9 4.9 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465c-1.067.047-1.406.06-4.123.06s-3.056-.01-4.123-.06c-1.064-.05-1.789-.218-2.427-.465a4.9 4.9 0 0 1-1.772-1.153a4.9 4.9 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.012 15.056 2 14.717 2 12s.01-3.056.06-4.122s.217-1.79.465-2.428a4.9 4.9 0 0 1 1.153-1.772A4.9 4.9 0 0 1 5.45 2.525c.637-.248 1.362-.415 2.427-.465C8.945 2.013 9.284 2 12.001 2"
+                />
+              </svg>
+            </div>
+
+            <div class="bg-youtube px-4 py-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                viewBox="0 0 24 24"
+              >
+                <g fill="none" fill-rule="evenodd">
+                  <path
+                    d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M12 4c.855 0 1.732.022 2.582.058l1.004.048l.961.057l.9.061l.822.064a3.8 3.8 0 0 1 3.494 3.423l.04.425l.075.91c.07.943.122 1.971.122 2.954s-.052 2.011-.122 2.954l-.075.91l-.04.425a3.8 3.8 0 0 1-3.495 3.423l-.82.063l-.9.062l-.962.057l-1.004.048A62 62 0 0 1 12 20a62 62 0 0 1-2.582-.058l-1.004-.048l-.961-.057l-.9-.062l-.822-.063a3.8 3.8 0 0 1-3.494-3.423l-.04-.425l-.075-.91A41 41 0 0 1 2 12c0-.983.052-2.011.122-2.954l.075-.91l.04-.425A3.8 3.8 0 0 1 5.73 4.288l.821-.064l.9-.061l.962-.057l1.004-.048A62 62 0 0 1 12 4m-2 5.575v4.85c0 .462.5.75.9.52l4.2-2.425a.6.6 0 0 0 0-1.04l-4.2-2.424a.6.6 0 0 0-.9.52Z"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-8">
+          <div class="text-2xl font-semibold capitalize">Navigation</div>
+          <div class="flex flex-col gap-2 capitalize">
+            <a href="./index.html">home</a>
+            <a href="./HMTL/About.html">about</a>
+            <a href="./HMTL/Whower.html">Who we are?</a>
+            <a href="./HMTL/Programs.html">Programs</a>
+            <a href="./HMTL/Contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div class="flex flex-col lg:col-span-2 gap-8">
+          <div class="text-2xl font-semibold capitalize">Contact us</div>
+          <div class=" cursor-pointer flex-col gap-2">
+            <div class="capitalize hover:underline">
+              4486 Richards Avenue, Modesto CA - 95354
+            </div>
+            <div class="hover:underline">209-818-6041</div>
+            <div class="hover:underline">charity90@gmail.com</div>
+          </div>
+        </div>
+
+        <div class="flex flex-col col-span-2 gap-8">
+          <div class="text-2xl font-semibold capitalize">support</div>
+          <div class="flex flex-col gap-3">
+            <div>When a child gets access to good food, it can change.</div>
+            <div
+              class="w-fit h-fit px-6 py-3 bg-secondarycolor capitalize transition-all duration-700 delay-150 ease-in-out cursor-pointer font-medium hover:bg-transparent border-transparent hover:border-white border-2"
+            >
+              join us today
+            </div>
           </div>
         </div>
       </div>
-      <div class="flex flex-col gap-8">
-        <div class="text-2xl font-semibold capitalize">Navigation</div>
-        <div class="flex flex-col gap-2 capitalize">
-          <a href="./index.html">home</a>
-          <a href="./HMTL/About.html">about</a>
-          <a href="./HMTL/Whower.html">Who we are?</a>
-          <a href="./HMTL/Programs.html">Programs</a>
-          <a href="./HMTL/Contact.html">Contact</a>
-        </div>
+      <div class="text-sm text-center pt-2">
+        Copyright © 2024 All rights reserved
       </div>
+    </footer>
 
-      <div class="flex flex-col lg:col-span-2 gap-8">
-        <div class="text-2xl font-semibold capitalize">Contact us</div>
-        <div class="flex flex-col gap-2 ">
-          <div class="capitalize hover:underline">
-            4486 Richards Avenue, Modesto CA - 95354
-          </div>
-          <div class="hover:underline">209-818-6041</div>
-          <div class="hover:underline">charity90@gmail.com</div>
-        </div>
-      </div>
-
-      <div class="flex flex-col col-span-2 gap-8">
-        <div class="text-2xl font-semibold capitalize">support</div>
-        <div class="flex flex-col gap-3">
-          <div>When a child gets access to good food, it can change.</div>
-          <div
-            class="w-fit h-fit px-6 py-3 bg-secondarycolor capitalize transition-all duration-700 delay-150 ease-in-out cursor-pointer font-medium hover:bg-transparent border-transparent hover:border-white border-2">
-            join us today
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="text-sm text-center pt-2">
-      Copyright © 2024 All rights reserved
-    </div>
-  </footer>
-
-  <script src="./index.js"></script>
-</body>
-
+    <script src="./index.js"></script>
+  </body>
 </html>
