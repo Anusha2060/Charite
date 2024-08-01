@@ -168,8 +168,7 @@
             </div>
             <div class="flex gap-5">
               <div
-                class="cursor-pointer h-fit px-6 py-4 bg-red-500 text-lg text-white font-semibold border-2 border-red-400
-                hover:bg-transparent border-2 border-transparent hover:border-secondarycolor hover:text-secondarycolor"
+                class="cursor-pointer h-fit px-6 py-4 bg-red-500 text-lg text-white font-semibold border-2 border-red-400 hover:bg-transparent border-2 border-transparent hover:border-secondarycolor hover:text-secondarycolor"
               >
                 Donate Now
               </div>
@@ -351,18 +350,20 @@
     </div>
   </div> -->
 
-    <div class="bg-secondarycolor text-white py-20">
+    <div class="bg-secondarycolor flex flex-col gap-4 text-white py-20">
       <div class="text-center">
-        <div>Helping today</div>
-        <div>How we help people</div>
+        <div class="font-semibold">Helping today</div>
+        <div class="text-3xl font-semibold">How we help people</div>
       </div>
 
-      <div class="w-10/12 mx-auto flex gap-5 text-center pt-10">
-        <div class="flex flex-col gap-2">
-          <div>
+      <div class="w-10/12 mx-auto grid grid-cols-3 gap-24 text-center pt-10">
+        <div class="flex flex-col gap-3">
+          <div
+            class="flex justify-center p-6 mb-4 h-fit w-fit bg-gray-500 mx-auto bg-opacity-10 rounded-full"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-12 h-12 text-white"
+              class="w-14 h-14 text-white"
               viewBox="0 0 1024 1024"
             >
               <path
@@ -377,36 +378,45 @@
             pulvinar ante employees and organizations to support.
           </div>
         </div>
-        <div class="w-3/12">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-12 h-12 text-white"
-            viewBox="0 0 24 24"
+
+        <div class="flex flex-col gap-3">
+          <div
+            class="flex justify-center p-6 mb-4 h-fit w-fit bg-gray-500 mx-auto bg-opacity-10 rounded-full"
           >
-            <g fill="none">
-              <path
-                fill="currentColor"
-                d="m8.962 19.379l-.473.582zM12 5.574l-.548.512a.75.75 0 0 0 1.096 0zm3.038 13.805l.473.582zM12 21v-.75zm-2.566-2.204c-1.45-1.176-3.142-2.719-4.466-4.408c-1.339-1.707-2.218-3.46-2.218-5.07h-1.5c0 2.117 1.13 4.202 2.537 5.996c1.422 1.813 3.21 3.436 4.702 4.647zM2.75 9.318c0-2.905 1.268-4.7 2.836-5.315c1.565-.613 3.754-.175 5.866 2.083l1.096-1.024c-2.388-2.554-5.199-3.36-7.509-2.456C2.732 3.51 1.25 5.992 1.25 9.318zM15.51 19.96c1.493-1.211 3.281-2.834 4.703-4.647c1.407-1.794 2.537-3.879 2.537-5.997h-1.5c0 1.612-.88 3.364-2.218 5.071c-1.324 1.689-3.016 3.232-4.466 4.408zm7.24-10.644c0-3.325-1.482-5.807-3.79-6.71c-2.31-.905-5.12-.1-7.508 2.455l1.096 1.024c2.112-2.258 4.301-2.696 5.866-2.083c1.568.614 2.836 2.41 2.836 5.314zM8.49 19.961c1.27 1.032 2.152 1.789 3.51 1.789v-1.5c-.723 0-1.173-.324-2.566-1.454zm6.076-1.165c-1.393 1.13-1.843 1.454-2.566 1.454v1.5c1.358 0 2.24-.757 3.51-1.789z"
-              />
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-width="1.5"
-                d="M18.5 9h-2m0 0h-2m2 0V7m0 2v2"
-              />
-            </g>
-          </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-14 h-14 text-white"
+              viewBox="0 0 24 24"
+            >
+              <g fill="none">
+                <path
+                  fill="currentColor"
+                  d="m8.962 19.379l-.473.582zM12 5.574l-.548.512a.75.75 0 0 0 1.096 0zm3.038 13.805l.473.582zM12 21v-.75zm-2.566-2.204c-1.45-1.176-3.142-2.719-4.466-4.408c-1.339-1.707-2.218-3.46-2.218-5.07h-1.5c0 2.117 1.13 4.202 2.537 5.996c1.422 1.813 3.21 3.436 4.702 4.647zM2.75 9.318c0-2.905 1.268-4.7 2.836-5.315c1.565-.613 3.754-.175 5.866 2.083l1.096-1.024c-2.388-2.554-5.199-3.36-7.509-2.456C2.732 3.51 1.25 5.992 1.25 9.318zM15.51 19.96c1.493-1.211 3.281-2.834 4.703-4.647c1.407-1.794 2.537-3.879 2.537-5.997h-1.5c0 1.612-.88 3.364-2.218 5.071c-1.324 1.689-3.016 3.232-4.466 4.408zm7.24-10.644c0-3.325-1.482-5.807-3.79-6.71c-2.31-.905-5.12-.1-7.508 2.455l1.096 1.024c2.112-2.258 4.301-2.696 5.866-2.083c1.568.614 2.836 2.41 2.836 5.314zM8.49 19.961c1.27 1.032 2.152 1.789 3.51 1.789v-1.5c-.723 0-1.173-.324-2.566-1.454zm6.076-1.165c-1.393 1.13-1.843 1.454-2.566 1.454v1.5c1.358 0 2.24-.757 3.51-1.789z"
+                />
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-width="1.5"
+                  d="M18.5 9h-2m0 0h-2m2 0V7m0 2v2"
+                />
+              </g>
+            </svg>
+          </div>
+
           <div class="cursor-pointer font-bold text-2xl">Health</div>
           <div>
             Odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet
             pulvinar ante employees and organizations to support.
           </div>
         </div>
-        <div class="w-3/12">
-          <div>
+
+        <div class="flex flex-col gap-3">
+          <div
+            class="flex justify-center p-6 mb-4 h-fit w-fit bg-gray-500 mx-auto bg-opacity-10 rounded-full"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-12 h-12 text-white"
+              class="w-14 h-14 text-white"
               viewBox="0 0 14 14"
             >
               <path
@@ -427,7 +437,7 @@
       </div>
     </div>
 
-    <div class="w-10/12 flex gap-10 mx-auto py-32">
+    <div class="w-10/12 grid grid-cols-4 gap-10 mx-auto py-32">
       <div class="flex flex-col gap-2">
         <div class="text-boxcolor text-lg font-semibold">News</div>
         <div class="text-4xl text-maincolor font-semibold">Latest Blog</div>
@@ -461,29 +471,45 @@
         </div>
       </div>
 
-      <div class="w-11/12 flex gap-5 bg-red-100">
+      <div class="col-span-3 grid grid-cols-2 gap-10">
         <div>
           <img class="h-60 w-50" src="./Images/Handlogo.jpg" alt="" />
-          <div class="w-9/12 bg-imgboxcolor">
-            <div>Help the ecosystems</div>
-            <div>
+          <div class="p-6 flex flex-col gap-5 bg-imgboxcolor">
+            <div
+              class="cursor-pointer text-2xl font-bold text-maincolor hover:text-secondarycolor"
+            >
+              Help the ecosystems
+            </div>
+            <div class="text-md text-gray-500">
               When a child gets access to good food, it can change just about
               everything. Sed do eiusmod tempor incididunt dolore magna aliqua.
               Ut enim ad minim veniam, quis nostrud exercitation
             </div>
-            <div>read more</div>
+            <div
+              class="cursor-pointer capitalize text-secondarycolor font-bold text-md border-b-2 w-fit pb-2 border-secondarycolor hover:tracking-widest transition-all duration-500 ease-in-out"
+            >
+              read more
+            </div>
           </div>
         </div>
         <div>
           <img class="h-60 w-50" src="./Images/News.jpg" alt="" />
-          <div class="w-9/12 bg-imgboxcolor">
-            <div>Help the ecosystems</div>
-            <div>
+          <div class="p-6 flex flex-col gap-5 bg-imgboxcolor">
+            <div
+              class="text-2xl font-bold text-maincolor cursor-pointer hover:text-secondarycolor"
+            >
+              Help the ecosystems
+            </div>
+            <div class="text-md text-gray-500">
               When a child gets access to good food, it can change just about
               everything. Sed do eiusmod tempor incididunt dolore magna aliqua.
               Ut enim ad minim veniam, quis nostrud exercitation
             </div>
-            <div>read more</div>
+            <div
+              class="text-md text-secondarycolor cursor-pointer capitalize border-b-2 font-bold pb-2 w-fit h-fit border-secondarycolor hover:tracking-widest transition-all duration-500 ease-in-out"
+            >
+              read more
+            </div>
           </div>
         </div>
       </div>
@@ -496,7 +522,9 @@
         class="grid md:grid-cols-4 lg:grid-cols-7 md:gap-y-16 gap-6 w-11/12 lg:w-10/12 mx-auto py-16 border-b border-gray-300"
       >
         <div class="flex flex-col col-span-2 gap-8">
-          <div class=" cursor-pointer font-medium fontuse flex gap-3 items-center">
+          <div
+            class="cursor-pointer font-medium fontuse flex gap-3 items-center"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-16 w-16 text-secondarycolor"
@@ -587,7 +615,7 @@
 
         <div class="flex flex-col lg:col-span-2 gap-8">
           <div class="text-2xl font-semibold capitalize">Contact us</div>
-          <div class=" cursor-pointer flex-col gap-2">
+          <div class="cursor-pointer flex-col gap-2">
             <div class="capitalize hover:underline">
               4486 Richards Avenue, Modesto CA - 95354
             </div>
