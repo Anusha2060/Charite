@@ -37,7 +37,7 @@
     </style>
   </head>
 
-  <body>
+  <body class="h-fit w-screen overflow-x-clip">
     <!-- NAVIGATION -->
     <nav class="bg-maincolor">
       <div class="w-10/12 mx-auto flex items-center justify-between py-5">
@@ -112,83 +112,159 @@
 
     <!-- MIDDLE SECTION -->
 
-    <div class="bg-red-500 my-20">
-      <div class="flex gap-5">
-        <div class="flex flex-col gap-2">
-          <label>First Name</label>
-          <input
-            class="p-2"
-            type="text"
-            id="lname"
-            name="lastname"
-            placeholder="Your first name.."
-          />
-        </div>
-        <div class="flex flex-col gap-2">
-          <label>Last Name</label>
-          <input
-            class="p-2"
-            type="text"
-            id="lname"
-            name="lastname"
-            placeholder="Your last name.."
-          />
-        </div>
+    <div class="pb-10  w-10/12 mx-auto grid grid-cols-3 gap-14">
+      <div class="grid grid-cols-2 gap-5  col-span-2">
+
+      <div class="flex flex-col gap-2">
+        <label>First Name</label>
+        <input
+          class="p-2"
+          type="text"
+          name="lastname"
+          placeholder="Your first name.."
+        />
+      </div>
+      <div class="flex flex-col gap-2">
+        <label>Last Name</label>
+        <input
+          class="p-2"
+          type="text"
+          name="lastname"
+          placeholder="Your last name.."
+        />
       </div>
 
-      <div class="flex gap-5">
-        <div class="flex flex-col gap-2">
-          <label>Email</label>
-          <input
-            class="p-2"
-            type="text"
-            id="lname"
-            name="lastname"
-            placeholder="Your Email.."
-          />
-        </div>
-        <div class="flex flex-col gap-2">
-          <label>Subjet</label>
-          <input
-            class="border-2 border-gray-300 p-2"
-            type="text"
-            id="lname"
-            name="lastname"
-            placeholder="Enter Subject.."
-          />
-        </div>
+      <div class="flex flex-col gap-2">
+        <label>Email</label>
+        <input
+          class="p-2"
+          type="text"
+          name="lastname"
+          placeholder="Your Email.."
+        />
+      </div>
+      <div class="flex flex-col gap-2">
+        <label>Subjet</label>
+        <input
+          class="border-2 border-gray-300 p-2"
+          type="text"
+          name="lastname"
+          placeholder="Enter Subject.."
+        />
       </div>
 
-      <label for="country">Country</label>
-      <select id="country" name="country">
-        <option value="australia">Australia</option>
-        <option value="canada">Canada</option>
-        <option value="usa">USA</option>
-      </select>
+      <div class="flex flex-col gap-2">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
 
-      <!-- Multi-TIck -->
-      <label for="country">Donate</label>
-      <select id="country" name="country">
-        <option value="australia">A</option>
-        <option value="canada">Canada</option>
-        <option value="usa">USA</option>
-      </select>
+      <!-- Multi-TIck  -->
+      <div class="flex flex-col gap-2">
+        <label for="country">Donate</label>
+        <div class="flex gap-5 cursor-pointer">
+          <div>
+            <input class="cursor-pointer" type="checkbox" />
+            <label for="">Money</label>
+          </div>
+
+          <div>
+            <input class="cursor-pointer" type="checkbox" />
+            <label for="">Food</label>
+          </div>
+          <div>
+            <input class="cursor-pointer" type="checkbox" />
+            <label for="">Medicine</label>
+          </div>
+          <div>
+            <input class="cursor-pointer" type="checkbox" />
+            <label for="">Clothes</label>
+          </div>
+        </div>
+      </div>
 
       <!-- Radio -->
 
-      <!-- <label for="subject">Subject</label>
-      <textarea
-        id="subject"
-        name="subject"
-        placeholder="Write something.."
-        style="height: 200px"
-      ></textarea> -->
+      <div class="flex flex-col gap-4 ">
+        <label for="country">Age group:</label>
+        <div class="flex gap-2 ">
+          <div>
+            <input class="cursor-pointer" type="radio" />
+            <label for="">0-20yrs</label>
+          </div>
 
-      <button>Send</button>
+          <div>
+            <input class="cursor-pointer"  type="radio" />
+            <label for="">21-50yrs</label>
+          </div>
+          <div>
+            <input class="cursor-pointer" type="radio" />
+            <label for="">51-80yrs</label>
+          </div>
+          <div>
+            <input class="cursor-pointer" type="radio" />
+            <label for="">81-100yrs</label>
+          </div>
+        </div>
+      </div>
+      <button class="">Send</button>
+      </div>
+<!-- Second part -->
+<div class="">
+  <div class="">
+    <div>ICON</div>
+    <div>Buttonwood, California</div>
+    <div>Rosemead, CA 91770 </div>
+  </div>
+
+
+  <div>
+    <div>ICON</div>
+    <div>+1 253 565 2365    </div>
+    <div>Mon to Fri 9am to 6pm
+
+    </div>
+  </div>
+
+
+  <div>
+    <div>ICON</div>
+    <div>support@colorlib.com</div>
+    <div>Send us your query anytime!
+
+    </div>
+  </div>
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+    <div class="h-[400px] w-full">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2484.6471960368904!2d-0.008963223949975195!3d51.482989912486985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1722616948268!5m2!1sen!2suk"
+        class="h-full w-full"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
 
     <!-- FOOTER -->
-    <footer class="w-screen py-4 bg-maincolor mt-4 text-white">
+    <footer class="w-screen py-4 bg-maincolor text-white">
       <div
         class="grid md:grid-cols-4 lg:grid-cols-7 md:gap-y-16 gap-6 w-11/12 lg:w-10/12 mx-auto py-16 border-b border-gray-300"
       >
