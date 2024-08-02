@@ -113,21 +113,11 @@
     <!-- MIDDLE SECTION -->
 
     <div class="bg-red-500 my-20">
-      <div class="flex flex-col gap-2">
-        <label for="fname">Get in touch:</label>
-        <input
-          class="border-2 border-black w-fit p-1"
-          type="text"
-          id="fname"
-          name="firstname"
-          placeholder="Your name.."
-        />
-      </div>
-
       <div class="flex gap-5">
         <div class="flex flex-col gap-2">
-          <label for="lname">First Name</label>
+          <label>First Name</label>
           <input
+            class="p-2"
             type="text"
             id="lname"
             name="lastname"
@@ -135,8 +125,9 @@
           />
         </div>
         <div class="flex flex-col gap-2">
-          <label for="lname">Last Name</label>
+          <label>Last Name</label>
           <input
+            class="p-2"
             type="text"
             id="lname"
             name="lastname"
@@ -146,18 +137,20 @@
       </div>
 
       <div class="flex gap-5">
-        <div>
-          <label for="lname">Email</label>
+        <div class="flex flex-col gap-2">
+          <label>Email</label>
           <input
+            class="p-2"
             type="text"
             id="lname"
             name="lastname"
             placeholder="Your Email.."
           />
         </div>
-        <div>
-          <label for="lname">Subjet</label>
+        <div class="flex flex-col gap-2">
+          <label>Subjet</label>
           <input
+            class="border-2 border-gray-300 p-2"
             type="text"
             id="lname"
             name="lastname"
@@ -173,13 +166,23 @@
         <option value="usa">USA</option>
       </select>
 
-      <label for="subject">Subject</label>
+      <!-- Multi-TIck -->
+      <label for="country">Donate</label>
+      <select id="country" name="country">
+        <option value="australia">A</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+
+      <!-- Radio -->
+
+      <!-- <label for="subject">Subject</label>
       <textarea
         id="subject"
         name="subject"
         placeholder="Write something.."
         style="height: 200px"
-      ></textarea>
+      ></textarea> -->
 
       <button>Send</button>
     </div>

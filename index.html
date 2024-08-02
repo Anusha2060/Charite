@@ -52,7 +52,7 @@
       <div class="w-11/12 mx-auto flex items-center justify-between py-5">
         <div class="flex items-center gap-24 text-white">
           <div
-            class="text-3xl font-medium fontuse flex gap-3 items-center justify-center"
+            class="text-3xl font-medium fontuse flex gap-3 items-center justify-center cursor-pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -70,11 +70,17 @@
           </div>
 
           <div class="lg:flex hidden items-center gap-8 capitalize">
-            <a href="./index.html">home</a>
-            <a href="./HMTL/About.html">about</a>
-            <a href="./HMTL/Whower.html">Who we are?</a>
-            <a href="./HMTL/Programs.html">Programs</a>
-            <a href="./HMTL/Contact.html">Contact</a>
+            <a class="hover:text-boxcolor" href="./index.html">home</a>
+            <a class="hover:text-boxcolor" href="./HMTL/About.html">about</a>
+            <a class="hover:text-boxcolor" href="./HMTL/Whower.html"
+              >Who we are?</a
+            >
+            <a class="hover:text-boxcolor" href="./HMTL/Programs.html"
+              >Programs</a
+            >
+            <a class="hover:text-boxcolor" href="./HMTL/Contact.html"
+              >Contact</a
+            >
           </div>
         </div>
         <div class="w-fit h-fit flex lg:hidden" onclick="Sidebar()">
@@ -161,14 +167,14 @@
             <div class="text-4xl text-maincolor font-semibold">
               Donate vitamin B12 supply program
             </div>
-            <div class="py-3">
+            <div class="py-3 text-md text-gray-500">
               When a child gets access to good food, it can change just about
               everything. Sed do eiusmod tempor incididunt dolore magna aliqua.
               Ut enim ad minim veniam, quis nostrud exercitation
             </div>
             <div class="flex gap-5">
               <div
-                class="cursor-pointer h-fit px-6 py-4 bg-red-500 text-lg text-white font-semibold border-2 border-red-400 hover:bg-transparent border-2 border-transparent hover:border-secondarycolor hover:text-secondarycolor"
+                class="cursor-pointer transition-all duration-700 delay-150 ease-in-out h-fit px-6 py-4 bg-red-500 text-lg text-white font-semibold border-2 border-red-400 hover:bg-transparent border-2 border-transparent hover:border-secondarycolor hover:text-secondarycolor"
               >
                 Donate Now
               </div>
@@ -209,7 +215,7 @@
         <img class="h-72 w-full object-cover" src="./Images/Aaaa.jpg" alt="" />
         <div class="flex flex-col gap-4 py-2 px-6">
           <div
-            class="text-3xl font-semibold group-hover:text-secondarycolor cursor-pointer"
+            class="text-3xl font-semibold group-hover:text-secondarycolor cursor-pointer transition-all duration-700 delay-150 ease-in-out"
           >
             Donation
           </div>
@@ -227,7 +233,7 @@
               <div>raised</div>
             </div>
             <div
-              class="cursor-pointer h-full bg-secondarycolor text-white flex items-center justify-center font-semibold border-2 border-transparent group-hover:border-secondarycolor group-hover:text-secondarycolor group-hover:bg-transparent"
+              class="cursor-pointer transition-all duration-700 delay-150 ease-in-out h-full bg-secondarycolor text-white flex items-center justify-center font-semibold border-2 border-transparent group-hover:border-secondarycolor group-hover:text-secondarycolor group-hover:bg-transparent"
             >
               Donate
             </div>
@@ -243,11 +249,11 @@
         />
         <div class="flex flex-col gap-4 py-2 px-6">
           <div
-            class="text-3xl font-semibold group-hover:text-secondarycolor cursor-pointer"
+            class="text-3xl font-semibold group-hover:text-secondarycolor cursor-pointer transition-all duration-700 delay-150 ease-in-out"
           >
             Health Services
           </div>
-          <div>
+          <div class="text-md text-gray-600">
             Our health services are designed to meet the needs of underserved
             communities, ensuring everyone has the opportunity to live a healthy
             life.
@@ -262,7 +268,7 @@
               <div>raised</div>
             </div>
             <div
-              class="cursor-pointer h-full bg-secondarycolor text-white flex items-center justify-center font-semibold border-2 border-transparent group-hover:border-secondarycolor group-hover:text-secondarycolor group-hover:bg-transparent"
+              class="cursor-pointer transition-all duration-700 delay-150 ease-in-out h-full bg-secondarycolor text-white flex items-center justify-center font-semibold border-2 border-transparent group-hover:border-secondarycolor group-hover:text-secondarycolor group-hover:bg-transparent"
             >
               Donate
             </div>
@@ -278,7 +284,7 @@
         />
         <div class="flex flex-col gap-4 py-2 px-6">
           <div
-            class="text-3xl font-semibold group-hover:text-secondarycolor cursor-pointer"
+            class="text-3xl font-semibold group-hover:text-secondarycolor cursor-pointer transition-all duration-700 delay-150 ease-in-out"
           >
             Volunteer
           </div>
@@ -296,7 +302,7 @@
               <div>raised</div>
             </div>
             <div
-              class="cursor-pointer h-full bg-secondarycolor text-white flex items-center justify-center font-semibold border-2 border-transparent group-hover:border-secondarycolor group-hover:text-secondarycolor group-hover:bg-transparent"
+              class="cursor-pointer transition-all duration-700 delay-150 ease-in-out h-full bg-secondarycolor text-white flex items-center justify-center font-semibold border-2 border-transparent group-hover:border-secondarycolor group-hover:text-secondarycolor group-hover:bg-transparent"
             >
               Donate
             </div>
@@ -317,7 +323,7 @@
           <div class="text-4xl text-maincolor font-semibold">
             What we are doing
           </div>
-          <div class="py-3">
+          <div class="py-3 text-lg text-gray-500">
             When a child gets access to good food, it can change just about
             everything. Sed do eiusmod tempor incididunt dolore magna aliqua. Ut
             enim ad minim veniam, quis nostrud exercitation
@@ -476,7 +482,7 @@
           <img class="h-60 w-50" src="./Images/Handlogo.jpg" alt="" />
           <div class="p-6 flex flex-col gap-5 bg-imgboxcolor">
             <div
-              class="cursor-pointer text-2xl font-bold text-maincolor hover:text-secondarycolor"
+              class="cursor-pointer transition-all duration-700 delay-150 ease-in-out text-2xl font-bold text-maincolor hover:text-secondarycolor"
             >
               Help the ecosystems
             </div>
@@ -496,7 +502,7 @@
           <img class="h-60 w-50" src="./Images/News.jpg" alt="" />
           <div class="p-6 flex flex-col gap-5 bg-imgboxcolor">
             <div
-              class="text-2xl font-bold text-maincolor cursor-pointer hover:text-secondarycolor"
+              class="text-2xl font-bold text-maincolor cursor-pointer transition-all duration-700 delay-150 ease-in-out hover:text-secondarycolor"
             >
               Help the ecosystems
             </div>
