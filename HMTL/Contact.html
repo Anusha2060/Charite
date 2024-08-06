@@ -42,12 +42,13 @@
 
   <body class="h-fit w-screen overflow-x-clip">
     <!-- NAVIGATION -->
-    <nav class="bg-maincolor">
-      <div class="w-10/12 mx-auto flex items-center justify-between py-5">
+    <nav id="navigation" class="fixed top-0 left-0 w-full z-50">
+      <div class="w-11/12 mx-auto flex items-center justify-between py-5">
         <div class="flex items-center gap-24 text-white">
           <div
-            class="text-3xl font-medium fontuse flex gap-3 items-center justify-center"
+            class="text-3xl font-medium fontuse flex gap-3 items-center justify-center cursor-pointer"
           >
+        
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-16 w-16 text-secondarycolor"
@@ -62,13 +63,19 @@
             </svg>
             Charity
           </div>
-
+  
           <div class="lg:flex hidden items-center gap-8 capitalize">
-            <a href="../index.html">home</a>
-            <a href="./About.html">about</a>
-            <a href="./Whower.html">Who we are?</a>
-            <a href="./Programs.html">Programs</a>
-            <a href="./Contact.html">Contact</a>
+            <a class="hover:text-boxcolor" href="../index.html">home</a>
+            <a class="hover:text-boxcolor" href="./About.html">about</a>
+            <a class="hover:text-boxcolor" href="./Whower.html"
+              >Who we are?</a
+            >
+            <a class="hover:text-boxcolor" href="./Programs.html"
+              >Programs</a
+            >
+            <a class="hover:text-boxcolor" href="./Contact.html"
+              >Contact</a
+            >
           </div>
         </div>
         <div class="w-fit h-fit flex lg:hidden" onclick="Sidebar()">
@@ -101,9 +108,9 @@
       </div>
       <div
         id="sidebar"
-        class="w-44 h-full fixed top-24 mt-2 transition-all duration-500 delay-150 ease-in-out translate-x-44 shadow-md border-l p-6 right-0 bg-white text-maincolor"
+        class=" w-44 h-full fixed top-24 mt-2 transition-all duration-500 delay-150 ease-in-out translate-x-44 shadow-md border-l p-6 right-0 bg-white text-maincolor"
       >
-        <div class="flex flex-col gap-8 font-semibold capitalize">
+        <div class="flex flex-col gap-8 font-semibold capitalize poppins">
           <a href="../index.html">home</a>
           <a href="./About.html">about</a>
           <a href="./Whower.html">Who we are?</a>
@@ -112,6 +119,9 @@
         </div>
       </div>
     </nav>
+    <div class="w-screen h-[400px] md:h-[600px]  lg:h-lvh  relative">
+      <img src="../Images/Cover.jpg" class="h-full w-full object-cover" />
+    </div>
 
     <!-- MIDDLE SECTION -->
     <div class="text-center p-20 text-3xl ">Make a Donation!!!</div>
