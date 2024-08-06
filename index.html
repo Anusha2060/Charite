@@ -12,6 +12,12 @@
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -43,6 +49,13 @@
       .fontuse {
         font-family: "Playwrite BE VLG", cursive;
       }
+
+      .poppins {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+     
     </style>
   </head>
 
@@ -114,10 +127,10 @@
       </div>
       <div
         id="sidebar"
-        class="w-44 h-full fixed top-24 mt-2 transition-all duration-500 delay-150 ease-in-out translate-x-44 shadow-md border-l p-6 right-0 bg-white text-maincolor"
+        class=" w-44 h-full fixed top-24 mt-2 transition-all duration-500 delay-150 ease-in-out translate-x-44 shadow-md border-l p-6 right-0 bg-white text-maincolor"
       >
-        <div class="flex flex-col gap-8 font-semibold capitalize">
-          <a href="./index.html">home</a>
+        <div class="flex flex-col gap-8 font-semibold capitalize poppins">
+          <a href="../index.html">home</a>
           <a href="./HMTL/About.html">about</a>
           <a href="./HMTL/Whower.html">Who we are?</a>
           <a href="./HMTL/Programs.html">Programs</a>
@@ -130,15 +143,15 @@
         <img src="./Images/Mainimg.jpg" class="h-full w-full object-cover" />
         <div class="bg-black w-full h-full absolute top-0 left-0 bg-opacity-60">
           <div
-            class="w-10/12 h-full mx-auto flex flex-col text-white justify-center items-center md:items-start pt-4 gap-4 lg:pt-0 lg:gap-8"
+            class="w-10/12 h-full mx-auto flex flex-col text-white justify-center items-center md:items-start pt-4 gap-4 lg:pt-0 lg:gap-8 poppins"
           >
             <div
-              class="text-xl text-center md:text-left md:text-5xl font-bold lg:w-5/12"
+              class="text-xl text-center md:text-left md:text-5xl font-semibold lg:w-5/12 "
             >
               Give me a helping hand to those who need it!
             </div>
             <div
-              class="text-center lg:text-left lg:w-4/12 lg:text-xl font-semibold"
+              class="text-center lg:text-left lg:w-4/12 lg:text-xl font-medium"
             >
               When a child gets access to good food, it can changejust about
               everything.
@@ -154,7 +167,7 @@
 
       <!-- MIDDLE SECTIONS -->
 
-      <div class="bg-bgcolor py-14">
+      <div class="bg-bgcolor py-14 poppins">
         <div class="w-10/12 md:w-11/12 lg:w-10/12  lg:h-96 py-6 grid md:grid-cols-2 gap-6 lg:gap-24 mx-auto">
           <img
             class="h-full md:h-96 lg:h-full w-full object-contain md:object-cover lg:object-cover"
@@ -162,7 +175,7 @@
             alt=""
           />
           <div class="grid gap-2 place-self-center h-fit">
-            <div class="text-boxcolor font-semibold text-lg">
+            <div class="text-boxcolor font-medium text-lg">
               Upcoming Program
             </div>
             <div class="md:text-2xl text-4xl lg:text-4xl text-maincolor font-semibold">
@@ -188,13 +201,13 @@
       </div>
     </div>
 
-    <div class="w-10/12 md:w-11/12 lg:w-10/12  grid md:grid-cols-2 gap-10 mx-auto py-0 lg:py-32">
+    <div class="w-10/12 md:w-11/12 lg:w-10/12  grid md:grid-cols-2 gap-10 mx-auto py-0 lg:py-32 poppins">
     <div class=" flex flex-col  gap-2">
-      <div class="text-boxcolor text-lg font-semibold">About Us</div>
+      <div class="text-boxcolor text-lg font-medium">About Us</div>
       <div class="text-4xl text-maincolor font-semibold">
         We are tender heart charity foundation.
       </div>
-      <div class="py-8">
+      <div class="py-8 text-gray-500">
         When a child gets access to good food, it can change just about
         everything. Sed do eiusmod tempor incididunt dolore magna aliqua. Ut
         enim ad minim veniam, quis nostrud exercitation
@@ -212,26 +225,26 @@
 
 
 
-    <div class="grid md:grid-cols-2  lg:grid-cols-3 gap-5 mx-auto">
+    <div class="grid md:grid-cols-2  lg:grid-cols-3 gap-5 mx-auto poppins">
       <div class="bg-imgboxcolor group pb-6">
         <img class="h-72 w-full object-cover" src="./Images/Aaaa.jpg" alt="" />
-        <div class="flex flex-col gap-4 py-2 px-6">
+        <div class="flex flex-col gap-4 py-4 px-6">
           <div
-            class="text-3xl font-semibold group-hover:text-secondarycolor cursor-pointer transition-all duration-700 delay-150 ease-in-out"
+            class="text-3xl text-maincolor font-semibold group-hover:text-secondarycolor cursor-pointer transition-all duration-700 delay-150 ease-in-out"
           >
             Donation
           </div>
-          <div>
+          <div class="text-md text-gray-600">
             Every contribution, no matter the size, makes a significant impact.
             Join our monthly giving program and become a Sustaining Supporter.
           </div>
           <div class="grid grid-cols-3 gap-4 gap-5 capitalize mt-4">
             <div>
-              <div class="text-xl text-boxcolor font-semibold">$67,512</div>
+              <div class="text-xl text-boxcolor font-medium">$67,512</div>
               <div>goal</div>
             </div>
             <div>
-              <div class="text-xl text-boxcolor font-semibold">$48,845</div>
+              <div class="text-xl text-boxcolor font-medium">$48,845</div>
               <div>raised</div>
             </div>
             <div
@@ -249,9 +262,9 @@
           src="./Images/Medical.jpg"
           alt=""
         />
-        <div class="flex flex-col gap-4 py-2 px-6">
+        <div class="flex flex-col gap-4 py-4 px-6">
           <div
-            class="text-3xl font-semibold group-hover:text-secondarycolor cursor-pointer transition-all duration-700 delay-150 ease-in-out"
+            class="text-3xl font-semibold text-maincolor  group-hover:text-secondarycolor cursor-pointer transition-all duration-700 delay-150 ease-in-out"
           >
             Health Services
           </div>
@@ -262,11 +275,11 @@
           </div>
           <div class="grid grid-cols-3 gap-4 gap-5 capitalize mt-4">
             <div>
-              <div class="text-xl text-boxcolor font-semibold">$67,512</div>
+              <div class="text-xl text-boxcolor font-medium">$67,512</div>
               <div>goal</div>
             </div>
             <div>
-              <div class="text-xl text-boxcolor font-semibold">$48,845</div>
+              <div class="text-xl text-boxcolor font-medium">$48,845</div>
               <div>raised</div>
             </div>
             <div
@@ -284,23 +297,23 @@
           src="./Images/Medicine.jpg"
           alt=""
         />
-        <div class="flex flex-col gap-4 py-2 px-6">
+        <div class="flex flex-col gap-4 py-4 px-6">
           <div
-            class="text-3xl font-semibold group-hover:text-secondarycolor cursor-pointer transition-all duration-700 delay-150 ease-in-out"
+            class="text-3xl font-semibold text-maincolor group-hover:text-secondarycolor cursor-pointer transition-all duration-700 delay-150 ease-in-out"
           >
             Volunteer
           </div>
-          <div>
+          <div class="text-md text-gray-600">
             Join a community of passionate individuals who share your commitment
             to making a difference. Help us run our various programs.
           </div>
           <div class="grid grid-cols-3 gap-4 gap-5 capitalize mt-4">
             <div>
-              <div class="text-xl text-boxcolor font-semibold">$67,512</div>
+              <div class="text-xl text-boxcolor font-medium">$67,512</div>
               <div>goal</div>
             </div>
             <div>
-              <div class="text-xl text-boxcolor font-semibold">$48,845</div>
+              <div class="text-xl text-boxcolor font-medium">$48,845</div>
               <div>raised</div>
             </div>
             <div
@@ -315,7 +328,6 @@
 
 
 
-    <!-- <div class="py-4 lg:mb-16"> -->
       <div class="w-10/12 md:w-11/12 lg:w-10/12 h-fit  grid md:grid-cols-2 gap-5 md:gap-10   lg:gap-24 mx-auto">
         <img
           class="h-96 w-full object-cover lg:object-contain"
@@ -505,15 +517,13 @@
       </div>
     </div>
 
+      <!-- FOOTER -->
+
 <div>
   <div class="h-[400px] w-full">
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2484.6471960368904!2d-0.008963223949975195!3d51.482989912486985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1722616948268!5m2!1sen!2suk"   class="h-full w-full"
     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
-
-
-  <!-- FOOTER -->
-
   <footer class="w-12/12 py-4 bg-maincolor text-white">
     <div
       class="grid md:grid-cols-4 lg:grid-cols-7 md:gap-y-16 gap-6 w-11/12 lg:w-10/12 mx-auto py-16 border-b border-gray-300"
