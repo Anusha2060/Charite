@@ -12,12 +12,14 @@
       rel="stylesheet"
     />
 
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet"
+  />
+
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -44,6 +46,7 @@
       .fontuse {
         font-family: "Playwrite BE VLG", cursive;
       }
+
       .poppins {
     font-family: "Poppins", sans-serif;
   }
@@ -52,7 +55,32 @@
   </head>
 
   <body class="h-fit w-screen overflow-x-clip poppins">
+    <?php
+    // define variables and set to empty values
+    $firstname = $lastemail = $email = $message = $country = $donation = $agegroup = "";
+    
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+      $firstname= test_input($_POST["firstname"]);
+      $lastemail= test_input($_POST["lastname"]);
+      $email = test_input($_POST["email"]);
+      $message= test_input($_POST["message"]);
+      $country = test_input($_POST["country"]);
+      $donation = test_input($_POST["donation"]);
+      $agegroup = test_input($_POST["agegroup"]);
+alert('Thank you for submitting!!!!');
+if($firstname.length()<=0){
 
+}
+    }
+    
+
+    function test_input($data) {
+      $data = trim($data);
+      $data = stripslashes($data);
+      $data = htmlspecialchars($data);
+      return $data;
+    }
+    ?>
 
 
 
@@ -144,14 +172,15 @@
     <div class="text-center p-20 text-3xl ">Make a Donation!!!</div>
 
     <div class="pb-10  w-10/12 mx-auto grid grid-cols-3 gap-14">
-      <div class="grid grid-cols-2 gap-5  col-span-2">
+      <form class="grid grid-cols-2 gap-5  col-span-2" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+
 
       <div class="flex flex-col gap-2">
         <label>First Name</label>
-        <input
+        <input  
           class="p-2 border border-gray-700 outline-none " 
           type="text"
-          name="lastname"
+          name="firstname "
           placeholder="Your first name.."
         />
       </div>
@@ -170,7 +199,7 @@
         <input
           class="p-2 border border-gray-700 outline-none"
           type="text"
-          name="lastname"
+          name="email"
           placeholder="Your Email.."
         />
       </div>
@@ -180,7 +209,7 @@
         <input
           class="border border-gray-700 outline-none p-2"
           type="text"
-          name="lastname"
+          name="message"
           placeholder="Enter Message.."
         />
       </div>
@@ -198,24 +227,24 @@
 
       <!-- Multi-TIck  -->
       <div class="flex flex-col gap-2">
-        <label for="country">Donate</label>
+        <label for="donation">Donate</label>
         <div class="flex gap-5 cursor-pointer">
           <div>
-            <input class="cursor-pointer" type="checkbox" />
+            <input class="cursor-pointer" name='donation' value='money'  type="checkbox" />
             <label for="">Money</label>
           </div>
 
           <div>
-            <input class="cursor-pointer" type="checkbox" />
+            <input class="cursor-pointer" name='donation' value='food' type="checkbox" />
             <label for="">Food</label>
           </div>
           <div>
-            <input class="cursor-pointer" type="checkbox" />
+            <input class="cursor-pointer" name='donation' value='medicine' type="checkbox" />
             <label for="">Medicine</label>
           </div>
           <div>
-            <input class="cursor-pointer" type="checkbox" />
-            <label for="">Clothes</label>
+            <input class="cursor-pointer" name='donation' value='clothe' type="checkbox" />
+            <label for="">Clothe</label>
           </div>
         </div>
       </div>
@@ -223,34 +252,34 @@
       <!-- Radio -->
 
       <div class="flex flex-col gap-4 ">
-        <label for="country">Age group:</label>
+        <label for="agegroup">Age group:</label>
         <div class="flex gap-2 ">
           <div>
-            <input class="cursor-pointer" type="radio" />
+            <input class="cursor-pointer" name='agegroup' value='0-20yrs' type="radio" />
             <label for="">0-20yrs</label>
           </div>
 
           <div>
-            <input class="cursor-pointer"  type="radio" />
+            <input class="cursor-pointer" name='agegroup' value='21-50yrs'  type="radio" />
             <label for="">21-50yrs</label>
           </div>
           <div>
-            <input class="cursor-pointer" type="radio" />
+            <input class="cursor-pointer" name='agegroup' value='51-80yrs' type="radio" />
             <label for="">51-80yrs</label>
           </div>
           <div>
-            <input class="cursor-pointer" type="radio" />
+            <input class="cursor-pointer" name='agegroup' value='81-100yrs' type="radio" />
             <label for="">81-100yrs</label>
           </div>
         </div>
       </div>
 
 
-      <button class="uppercase col-span-2 w-fit h-fit py-3 px-12 font-semibold text-boxcolor border-2 border-boxcolor 
+      <button type="submit" class="uppercase col-span-2 w-fit h-fit py-3 px-12 font-semibold text-boxcolor border-2 border-boxcolor 
       hover:border-transparent hover:bg-boxcolor hover:text-white transition-all duration-700 delay-150 ease-in-out">Send</button>
       
     
-    </div>
+  </form>
 <!-- Second part -->
 <div class=" flex flex-col gap-5">
   <div class="flex items-center gap-4">
@@ -340,7 +369,7 @@
 
         <!-- SVG ICONS -->
 
-        <div class="cursor-pointer  flex gap-3 items-center">
+        <div class=" cursor-pointer flex gap-3 items-center">
           <div class="bg-facebook px-4 py-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -411,7 +440,7 @@
 
       <div class="flex flex-col lg:col-span-2 gap-8">
         <div class="text-2xl font-medium capitalize">Contact us</div>
-        <div class="flex flex-col gap-4  cursor-pointer ">
+        <div class="flex flex-col gap-2  cursor-pointer ">
           <div class="capitalize hover:underline">
             4486 Richards Avenue, Modesto CA - 95354
           </div>

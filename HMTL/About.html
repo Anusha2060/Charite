@@ -10,6 +10,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -35,10 +41,15 @@
     .fontuse {
       font-family: "Playwrite BE VLG", cursive;
     }
+
+    .poppins {
+  font-family: "Poppins", sans-serif;
+}
+
   </style>
 </head>
 
-<body>
+<body class="flex flex-col gap-28 overflow-x-clip poppins">
   <!-- NAVIGATION -->
   <nav id="navigation" class="fixed top-0 left-0 w-full z-50">
     <div class="w-11/12 mx-auto flex items-center justify-between py-5">
@@ -119,26 +130,34 @@
   </nav>
   <div class="w-screen h-[400px] md:h-[600px]   relative">
     <img src="../Images/Back.jpg" class="h-full w-full object-cover" />
+    <div class="absolute top-0 left-0 right-0 bottom-0 text-6xl text-white bg-black bg-opacity-50 flex items-center justify-center font-semibold
+     capitalize poppins">about</div>
+
   </div>
 
 
 
 
   <!-- MIDDLE SECTION -->
-  <div class="w-10/12 md:w-11/12 lg:w-10/12  grid md:grid-cols-2 gap-10 mx-auto py-0 lg:py-32">
+  <div class="w-10/12 md:w-11/12 lg:w-10/12  grid md:grid-cols-2 gap-10 mx-auto py-0 lg:py-8">
     <div class=" flex flex-col  gap-2">
-      <div class="text-boxcolor text-lg font-semibold">About Us</div>
+      <div class="text-boxcolor text-lg font-medium">About Us</div>
       <div class="text-4xl text-maincolor font-semibold">
         We are tender heart charity foundation.
       </div>
       <div class="py-8 text-md text-gray-500">
         At Charity, we are dedicated to creating positive change in our communities. Our mission is to empower individuals through education, support, and fostering a brighter future for all. Join us in our journey to make a lasting impact, one act of kindness at a time.
 
+      </div>
 
-      </div>
-      <div class="capitalize w-fit h-fit px-6 py-4 bg-secondarycolor text-lg text-white font-semibold">
-        discover more
-      </div>
+      <div
+      class="  group  relative cursor-pointer h-fit w-fit text-red-500 hover:text-white border-2 border-red-500 px-6 py-4  text-sm lg:text-lg"
+    >
+        <div class=" relative z-10 capitalize  ">discover more </div>
+      <div class="absolute top-0 left-0 h-full w-0 bg-red-500 group-hover:w-full transition-all duration-500 delay-150 ease-in-out  ">    </div>
+    </div>
+
+
     </div>
     <div class="flex flex-col lg:flex-row gap-6 relative">
       <img class="h-80 md:h-96 w-full lg:w-72 lg:absolute top-0 left-0 object-cover" src="../Images/About.jpg" alt="" />
@@ -149,25 +168,27 @@
 
 
 
-  <div class="w-10/12 md:w-11/12 lg:w-10/12 h-fit  grid md:grid-cols-2 gap-5 md:gap-10   lg:gap-24 mx-auto">
+  <div class="w-10/12 md:w-11/12 lg:w-10/12 h-fit  grid md:grid-cols-2 gap-5 md:gap-10 lg:gap-24 mx-auto">
     <img
       class="h-96 w-full object-cover lg:object-contain"
       src="../Images/Medical.jpg"
       alt=""
     />
-    <div class="grid h-fit gap-2">
-      <div class="text-boxcolor font-semibold text-lg">Helping today</div>
+    <div class="grid h-fit gap-2 place-self-center">
+      <div class="text-boxcolor font-medium text-lg">Helping today</div>
       <div class="text-4xl text-maincolor font-semibold">
         What we do? 
       </div>
       <div class="py-3 text-lg text-gray-500">
         Charity is a non-profit organization focused on providing essential services. It encourages donations and volunteer participation to support its various programs aimed at improving the lives of children and other vulnerable groups.
 
-      <div
-        class="cursor-pointer w-fit h-fit text-red-400 border-2 border-red-400 mt-6 px-6 py-4 text-lg"
+        <div
+        class=" mt-6 group  relative cursor-pointer h-fit w-fit text-red-500 hover:text-white border-2 border-red-500 px-6 py-4  text-sm lg:text-lg"
       >
-        Join Us Today
+          <div class=" relative z-10 capitalize ">join us today </div>
+        <div class="absolute top-0 left-0 h-full w-0 bg-red-500 group-hover:w-full transition-all duration-500 delay-150 ease-in-out  ">    </div>
       </div>
+
     </div>
   </div>
 </div>
@@ -278,13 +299,12 @@
           Charity
         </div>
         <div>
-          When a child gets access to good food, it can change just about everything. Sed do eiusmod tempor incididunt
-          dolore magna aliqua.
+          When a child gets access to good food, it can change just about everything. 
         </div>
 
         <!-- SVG ICONS -->
 
-        <div class="flex gap-3 items-center">
+        <div class="cursor-pointer  flex gap-3 items-center">
           <div class="bg-facebook px-4 py-4 ">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24">
               <path fill="currentColor"
@@ -320,7 +340,7 @@
 
       </div>
       <div class="flex flex-col gap-8">
-        <div class="text-2xl font-semibold capitalize">Navigation</div>
+        <div class="text-2xl font-medium capitalize">Navigation</div>
         <div class="flex flex-col gap-2 capitalize">
             <a href="../index.html" >home</a>
             <a href="./About.html">about</a>
@@ -332,8 +352,8 @@
       </div>
 
       <div class="flex flex-col  lg:col-span-2 gap-8">
-        <div class="text-2xl font-semibold capitalize">Contact us</div>
-        <div class="flex flex-col gap-2  cursor-pointer">
+        <div class="text-2xl font-medium capitalize">Contact us</div>
+        <div class="flex flex-col gap-4  cursor-pointer">
           <div class="capitalize hover:underline"> 4486 Richards Avenue, Modesto CA - 95354</div>
           <div class="hover:underline"> 209-818-6041</div>
           <div class="hover:underline"> charity90@gmail.com</div>
@@ -341,7 +361,7 @@
       </div>
 
       <div class=" flex flex-col col-span-2 gap-8">
-        <div class="text-2xl font-semibold capitalize">support</div>
+        <div class="text-2xl font-medium capitalize">support</div>
         <div class="flex flex-col gap-3">
           <div>When a child gets access to good food, it can change.</div>
           <div
@@ -356,7 +376,7 @@
 </div>
 
 
-<script src="./index.js"></script>
+<script src="../index.js"></script>
 </body>
 
 </html>
