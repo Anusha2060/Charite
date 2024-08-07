@@ -39,7 +39,7 @@ function Activate(data) {
   })
 }
 
-function ShowPop() {
+function Popup() {
   if (sidebarshow.style.transform == "translateX(0px)") {
     sidebarshow.style.transform = "translateX(100%)";
   } else {
