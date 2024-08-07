@@ -45,7 +45,7 @@ function ShowPop() {
 }
 function RemovePop() {
   PopUp.style.top='-100%'
- 
+
 }
 
 function Submit() {
