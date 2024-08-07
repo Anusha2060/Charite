@@ -40,11 +40,12 @@ function Activate(data) {
 }
 
 function ShowPop() {
-  if (sidebarshow.style.transform == "translateX(0px)") {
-    sidebarshow.style.transform = "translateX(100%)";
-  } else {
-    sidebarshow.style.transform = "translateX(0px)";
-  }
+  PopUp.style.top='40%'
+ 
+}
+function RemovePop() {
+  PopUp.style.top='-100%'
+ 
 }
 
 function Submit() {
@@ -79,6 +80,8 @@ function Submit() {
     if(!emailRegex.test(email)){
       emailerror.innerText = 'email is address is not valid'
 
+    }else{
+      ShowPop()
     }
   } else {
     if (firstname.length <= 0) {
