@@ -79,16 +79,16 @@
             Charity
           </div>
   
-          <div class="lg:flex hidden items-center gap-8 capitalize">
-            <a class="hover:text-boxcolor" href="../index.html">home</a>
-            <a class="hover:text-boxcolor" href="./About.html">about</a>
-            <a class="hover:text-boxcolor" href="./Whower.html"
+          <div id="navitems"  class="lg:flex hidden items-center gap-8 capitalize">
+            <a onclick="Activate('home')" id="home" class="border-b-2 pb-2 border-transparent hover:text-boxcolor" href="../index.html">home</a>
+            <a onclick="Activate('about')" id="about" class="border-b-2 pb-2 border-transparent hover:text-boxcolor" href="./About.html">about</a>
+            <a onclick="Activate('whoweare')" id="whoweare" class="border-b-2 pb-2 border-transparent hover:text-boxcolor" href="./Whower.html"
               >Who we are?</a
             >
-            <a class="hover:text-boxcolor" href="./Programs.html"
+            <a onclick="Activate('programs')" id="programs" class="border-b-2 pb-2 border-transparent hover:text-boxcolor" href="./Programs.html"
               >Programs</a
             >
-            <a class="hover:text-boxcolor" href="./Contact.html"
+            <a onclick="Activate('contact')" id="contact" class="border-b-2 pb-2 border-secondarycolor hover:text-boxcolor" href="./Contact.html"
               >Contact</a
             >
           </div>
@@ -137,19 +137,19 @@
     <div class="w-screen h-[400px] md:h-[600px]  relative">
       <img src="../Images/Back.jpg" class="h-full w-full object-cover" />
       <div class="absolute top-0 left-0 right-0 bottom-0 text-6xl text-white bg-black bg-opacity-50 flex items-center justify-center font-semibold
-      capitalize poppins">Contact</div>
+      capitalize poppins">Contact <span class="text-secondarycolor mx-4">Us</span></div>
     </div>
 
     <!-- MIDDLE SECTION -->
-    <div class="text-center p-20 text-3xl ">Make a Donation!!!</div>
+    <div class="text-center p-20 text-5xl ">Make a <span class="text-secondarycolor font-medium">Donation!!!</span></div>
 
     <div class="pb-10  w-10/12 mx-auto grid grid-cols-3 gap-14">
-      <div class="grid grid-cols-2 gap-5  col-span-2">
+      <div class="grid shadow-md p-5 border grid-cols-2 gap-5  col-span-2">
 
       <div class="flex flex-col gap-2">
         <label>First Name</label>
         <input
-          class="p-2 border border-gray-700 outline-none " 
+          class="p-2 border border-gray-700 rounded-md   placeholder:text-gray-400 py-3 text-sm font-light outline-none " 
           type="text"
           name="lastname"
           placeholder="Your first name.."
@@ -158,7 +158,7 @@
       <div class="flex flex-col gap-2">
         <label>Last Name</label>
         <input
-          class="p-2 border border-gray-700 outline-none"
+          class="p-2 border border-gray-700 rounded-md   placeholder:text-gray-400 py-3 text-sm font-light outline-none"
           type="text"
           name="lastname"
           placeholder="Your last name.."
@@ -168,7 +168,7 @@
       <div class="flex flex-col gap-2">
         <label>Email</label>
         <input
-          class="p-2 border border-gray-700 outline-none"
+          class="p-2 border border-gray-700 rounded-md   placeholder:text-gray-400 font-light text-sm py-3 outline-none"
           type="text"
           name="lastname"
           placeholder="Your Email.."
@@ -178,7 +178,7 @@
         <label>Message
         </label>
         <input
-          class="border border-gray-700 outline-none p-2"
+          class="border border-gray-700 rounded-md   placeholder:text-gray-400 py-3 text-sm font-light outline-none p-2"
           type="text"
           name="lastname"
           placeholder="Enter Message.."
@@ -187,7 +187,7 @@
 
       <div class="flex flex-col gap-2">
         <label for="country">Country</label>
-        <select id="country" name="country" class="border border-gray-700 outline-none p-2">
+        <select id="country" name="country" class="border bg-white rounded-md py-3 placeholder:text-maincolor border-gray-700 outline-none p-2">
           <option value="australia">Australia</option>
           <option value="usa">United Kingdom</option>
           <option value="canada">Canada</option>
@@ -246,45 +246,45 @@
       </div>
 
 
-      <button class="uppercase col-span-2 w-fit h-fit py-3 px-12 font-semibold text-boxcolor border-2 border-boxcolor 
+      <button class="uppercase col-span-2 w-fit h-fit py-3 mt-8 px-14 font-medium text-boxcolor border-2 border-boxcolor 
       hover:border-transparent hover:bg-boxcolor hover:text-white transition-all duration-700 delay-150 ease-in-out">Send</button>
       
     
     </div>
 <!-- Second part -->
-<div class=" flex flex-col gap-5">
-  <div class="flex items-center gap-4">
+<div class=" flex shadow-md h-fit p-4 flex-col gap-8">
+  <div class="flex text-boxcolor items-center gap-4">
     <div class="">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" viewBox="0 0 24 24"><path fill="currentColor" d="m12 5.69l5 4.5V18h-2v-6H9v6H7v-7.81zM12 3L2 12h3v8h6v-6h2v6h6v-8h3z"/></svg>
     </div>
-    <div>
+    <div class="font-medium">
       <div>London, United kingdom </div>
-      <div> Cutty Sark, SE10 9HT </div>
+      <div class="font-normal"> Cutty Sark, SE10 9HT </div>
     </div>
   </div>
 
 
-  <div class="flex items-center gap-3" >
+  <div class="flex items-center text-boxcolor gap-3" >
     <div>
       <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" viewBox="0 0 36 36"><path fill="currentColor" d="M25 4H11a2 2 0 0 0-2 2v24a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2m-6 26h-2v-2h2Zm-8-4V6h14v20Z" class="clr-i-solid clr-i-solid-path-1"/><path fill="none" d="M0 0h36v36H0z"/></svg>
 
     </div>
-    <div>
+    <div class="font-medium">
       <div>+44 053 565 2365    </div>
-      <div>Mon to Fri 9am to 6pm
+      <div class="font-normal">Mon to Fri 9am to 6pm
     </div>
     </div>
   </div>
 
 
-  <div class="flex items-center gap-3">
+  <div class="flex items-center text-boxcolor gap-3">
     <div>
       <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12"  viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7L4 8v10h16V8zm0-2l8-5H4zM4 8V6v12z"/></svg>
 
     </div>
-    <div>
+    <div class="font-medium">
       <div>charity90@gmail.com</div>
-      <div>Send us your query anytime!
+      <div class="font-normal">Send us your query anytime!
     </div>
     </div>
   </div>
@@ -313,12 +313,14 @@
     ></iframe>
   </div>
 
-  <footer class="w-screen py-4 bg-maincolor text-white">
+  <footer class="w-12/12 py-4 bg-maincolor text-white">
     <div
       class="grid md:grid-cols-4 lg:grid-cols-7 md:gap-y-16 gap-6 w-11/12 lg:w-10/12 mx-auto py-16 border-b border-gray-300"
     >
       <div class="flex flex-col col-span-2 gap-8">
-        <div class="text-3xl font-medium fontuse flex gap-3 items-center">
+        <div
+          class="cursor-pointer font-medium fontuse flex gap-3 items-center text-2xl lg:text-4xl"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-16 w-16 text-secondarycolor"
@@ -338,10 +340,8 @@
           everything. 
         </div>
 
-        <!-- SVG ICONS -->
-
-        <div class="cursor-pointer  flex gap-3 items-center">
-          <div class="bg-facebook px-4 py-4">
+        <div class=" cursor-pointer flex gap-3 items-center">
+          <div class="bg-facebook hover:rotate-[360deg] transition-all duration-500 delay-150 ease-in-out px-4 py-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-6 w-6"
@@ -353,10 +353,10 @@
               />
             </svg>
           </div>
-          <div class="bg-linkdin px-4 py-4">
+          <div class="bg-linkdin group px-4 py-4 hover:rotate-[360deg] transition-all duration-500 delay-150 ease-in-out ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
+              class="h-6 w-6 "
               viewBox="0 0 24 24"
             >
               <path
@@ -365,12 +365,12 @@
               />
             </svg>
           </div>
-          <div class="bg-instagram px-4 py-4">
+          <div class="bg-instagram hover:rotate-[360deg] transition-all duration-500 delay-150 ease-in-out px-4 py-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
+              class="h-6 w-6 "
               viewBox="0 0 24 24"
-              viewBox="0 0 24 24"
+            
             >
               <path
                 fill="currentColor"
@@ -379,10 +379,10 @@
             </svg>
           </div>
 
-          <div class="bg-youtube px-4 py-4">
+          <div class="bg-youtube hover:rotate-[360deg] transition-all duration-500 delay-150 ease-in-out px-4 py-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
+              class="h-6 w-6 "
               viewBox="0 0 24 24"
             >
               <g fill="none" fill-rule="evenodd">
@@ -401,17 +401,17 @@
       <div class="flex flex-col gap-8">
         <div class="text-2xl font-medium capitalize">Navigation</div>
         <div class="flex flex-col gap-2 capitalize">
-          <a href="../index.html">home</a>
-          <a href="./About.html">about</a>
-          <a href="./Whower.html">Who we are?</a>
-          <a href="./Programs.html">Programs</a>
-          <a href="./Contact.html">Contact</a>
+          <a href="./index.html">home</a>
+          <a href="./HMTL/About.html">about</a>
+          <a href="./HMTL/Whower.html">Who we are?</a>
+          <a href="./HMTL/Programs.html">Programs</a>
+          <a href="./HMTL/Contact.html">Contact</a>
         </div>
       </div>
 
       <div class="flex flex-col lg:col-span-2 gap-8">
         <div class="text-2xl font-medium capitalize">Contact us</div>
-        <div class="flex flex-col gap-4  cursor-pointer ">
+        <div class="cursor-pointer flex flex-col gap-4">
           <div class="capitalize hover:underline">
             4486 Richards Avenue, Modesto CA - 95354
           </div>
@@ -425,7 +425,9 @@
         <div class="flex flex-col gap-3">
           <div>When a child gets access to good food, it can change.</div>
           <div
-            class="w-fit h-fit px-6 py-3 bg-secondarycolor capitalize transition-all duration-700 delay-150 ease-in-out cursor-pointer font-medium hover:bg-transparent border-transparent hover:border-white border-2"
+            class="w-fit h-fit px-6 py-3 bg-secondarycolor 
+             capitalize transition-all duration-700 delay-150 ease-in-out 
+             cursor-pointer font-medium hover:bg-transparent border-transparent hover:border-white border-2"
           >
             join us today
           </div>

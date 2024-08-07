@@ -54,6 +54,9 @@
       .poppins {
         font-family: "Poppins", sans-serif;
       }
+      .active{
+        border-color: #F15B43;
+      }
     </style>
   </head>
 
@@ -80,16 +83,16 @@
             Charity
           </div>
 
-          <div class="lg:flex hidden items-center gap-8 capitalize">
-            <a class="hover:text-boxcolor" href="./index.html">home</a>
-            <a class="hover:text-boxcolor" href="./HMTL/About.html">about</a>
-            <a class="hover:text-boxcolor" href="./HMTL/Whower.html"
+          <div id="navitems"  class="lg:flex hidden items-center gap-8 capitalize">
+            <a onclick="Activate('home')" id="home" class="border-b-2 pb-2 border-secondarycolor hover:text-boxcolor" href="./index.html">home</a>
+            <a onclick="Activate('about')" id="about" class="border-b-2 pb-2 border-transparent hover:text-boxcolor" href="./HMTL/About.html">about</a>
+            <a onclick="Activate('whoweare')" id="whoweare" class="border-b-2 pb-2 border-transparent hover:text-boxcolor" href="./HMTL/Whower.html"
               >Who we are?</a
             >
-            <a class="hover:text-boxcolor" href="./HMTL/Programs.html"
+            <a onclick="Activate('programs')" id="programs" class="border-b-2 pb-2 border-transparent hover:text-boxcolor" href="./HMTL/Programs.html"
               >Programs</a
             >
-            <a class="hover:text-boxcolor" href="./HMTL/Contact.html"
+            <a onclick="Activate('contact')" id="contact" class="border-b-2 pb-2 border-transparent hover:text-boxcolor" href="./HMTL/Contact.html"
               >Contact</a
             >
           </div>
@@ -143,9 +146,9 @@
             class="w-10/12 h-full mx-auto flex flex-col text-white justify-center items-center md:items-start pt-4 gap-4 lg:pt-0 lg:gap-8 poppins"
           >
             <div
-              class="text-xl text-center md:text-left md:text-5xl font-semibold lg:w-5/12"
+              class="text-xl text-center md:text-left   md:text-5xl font-semibold lg:w-5/12"
             >
-              Give me a helping hand to those who need it!
+              Give  a <span class="text-secondarycolor">helping hand </span> to those <span class="text-secondarycolor">who need it!</span>
             </div>
             <div
               class="text-center lg:text-left lg:w-4/12 lg:text-xl font-medium"
@@ -194,7 +197,8 @@
                 Donate Now
               </div>
               <div
-                class="group relative cursor-pointer h-fit text-red-500 hover:text-white border-2 border-red-500 px-6 py-4 text-sm lg:text-lg"
+                class="group relative cursor-pointer h-fit text-red-500 hover:text-white border-2
+                 border-red-500 px-6 py-4 text-sm lg:text-lg transition-all duration-700 delay-150 ease-in-out"
               >
                 <div class="relative z-10">View Programs</div>
                 <div
@@ -213,7 +217,7 @@
       <div class="flex flex-col gap-2">
         <div class="text-boxcolor text-lg font-medium">About Us</div>
         <div class="text-4xl text-maincolor font-semibold">
-          We are tender heart charity foundation.
+          We are <span class="text-secondarycolor">tender heart</span> charity <span class="text-secondarycolor">foundation.</span>
         </div>
 
         <div class="py-8 text-md text-gray-500">
@@ -223,7 +227,7 @@
 
     
         <div
-          class="group relative cursor-pointer h-fit w-fit text-red-500 hover:text-white border-2 border-red-500 px-6 py-4 text-sm lg:text-lg"
+          class="group relative cursor-pointer h-fit w-fit text-red-500 hover:text-white transition-all duration-700  delay-150 ease-in-out border-2 border-red-500 px-6 py-4 text-sm lg:text-lg"
         >
           <div class="relative z-10 capitalize">discover more</div>
           <div
@@ -355,14 +359,14 @@
       />
       <div class="grid h-fit gap-2 place-self-center">
         <div class="text-boxcolor font-medium text-lg">Helping today</div>
-        <div class="text-4xl text-maincolor font-semibold">Who we are?</div>
+        <div class="text-4xl text-maincolor font-semibold">Who <span class="text-secondarycolor">we are?</span></div>
         <div class="py-3 text-md text-gray-500">
           Charity is a non-profit organization focused on providing essential
           services. It encourages donations and volunteer participation to
           support its various programs aimed at improving the lives of children
           and other vulnerable groups.
           <div
-            class="mt-6 group relative cursor-pointer h-fit w-fit text-red-500 hover:text-white border-2 border-red-500 px-6 py-4 text-sm lg:text-lg"
+            class="mt-6 group relative cursor-pointer transition-all duration-700 delay-150 ease-in-out h-fit w-fit text-red-500 hover:text-white border-2 border-red-500 px-6 py-4 text-sm lg:text-lg"
           >
             <div class="relative z-10 capitalize">join us today</div>
             <div
@@ -373,10 +377,17 @@
       </div>
     </div>
 
+     <!-- video -->
+    <video class="w-full
+    h-full mx-auto"  loop autoplay>
+      <source src="./Video1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video> 
+
     <div class="bg-secondarycolor flex flex-col gap-4 text-white py-20">
       <div class="text-center">
         <div class="font-semibold">Helping today</div>
-        <div class="text-3xl font-semibold">How we help people</div>
+        <div class="text-3xl  pt-2 font-semibold">How we <span class="text-gray-700 pl-2 uppercase">help people</span></div>
       </div>
 
       <div
@@ -468,7 +479,7 @@
     <div class="w-10/12 md:w-11/12 grid lg:grid-cols-4 gap-10 mx-auto">
       <div class="flex flex-col gap-2">
         <div class="text-boxcolor text-lg font-medium">News</div>
-        <div class="text-4xl text-maincolor font-semibold">Latest Blog</div>
+        <div class="text-4xl text-maincolor font-semibold">Latest <span class="text-secondarycolor">Bogs</span></div>
         <div class="flex gap-3 pt-5">
           <div class="cursor-pointer h-fit p-3 border-2 border-gray-300">
             <svg
@@ -581,7 +592,7 @@
             </div>
 
             <div class=" cursor-pointer flex gap-3 items-center">
-              <div class="bg-facebook px-4 py-4">
+              <div class="bg-facebook hover:rotate-[360deg] transition-all duration-500 delay-150 ease-in-out px-4 py-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
@@ -593,10 +604,10 @@
                   />
                 </svg>
               </div>
-              <div class="bg-linkdin px-4 py-4">
+              <div class="bg-linkdin group px-4 py-4 hover:rotate-[360deg] transition-all duration-500 delay-150 ease-in-out ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
+                  class="h-6 w-6 "
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -605,12 +616,12 @@
                   />
                 </svg>
               </div>
-              <div class="bg-instagram px-4 py-4">
+              <div class="bg-instagram hover:rotate-[360deg] transition-all duration-500 delay-150 ease-in-out px-4 py-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
+                  class="h-6 w-6 "
                   viewBox="0 0 24 24"
-                  viewBox="0 0 24 24"
+                
                 >
                   <path
                     fill="currentColor"
@@ -619,10 +630,10 @@
                 </svg>
               </div>
 
-              <div class="bg-youtube px-4 py-4">
+              <div class="bg-youtube hover:rotate-[360deg] transition-all duration-500 delay-150 ease-in-out px-4 py-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
+                  class="h-6 w-6 "
                   viewBox="0 0 24 24"
                 >
                   <g fill="none" fill-rule="evenodd">
@@ -665,7 +676,9 @@
             <div class="flex flex-col gap-3">
               <div>When a child gets access to good food, it can change.</div>
               <div
-                class="w-fit h-fit px-6 py-3 bg-secondarycolor capitalize transition-all duration-700 delay-150 ease-in-out cursor-pointer font-medium hover:bg-transparent border-transparent hover:border-white border-2"
+                class="w-fit h-fit px-6 py-3 bg-secondarycolor 
+                 capitalize transition-all duration-700 delay-150 ease-in-out 
+                 cursor-pointer font-medium hover:bg-transparent border-transparent hover:border-white border-2"
               >
                 join us today
               </div>

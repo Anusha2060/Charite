@@ -74,12 +74,18 @@
             Charity
           </div>
 
-          <div class="lg:flex hidden items-center gap-8 capitalize">
-            <a class="hover:text-boxcolor" href="../index.html">home</a>
-            <a class="hover:text-boxcolor" href="./About.html">about</a>
-            <a class="hover:text-boxcolor" href="./Whower.html">Who we are?</a>
-            <a class="hover:text-boxcolor" href="./Programs.html">Programs</a>
-            <a class="hover:text-boxcolor" href="./Contact.html">Contact</a>
+          <div id="navitems"  class="lg:flex hidden items-center gap-8 capitalize">
+            <a onclick="Activate('home')" id="home" class="border-b-2 pb-2 border-transparent hover:text-boxcolor" href="../index.html">home</a>
+            <a onclick="Activate('about')" id="about" class="border-b-2 pb-2 border-transparent hover:text-boxcolor" href="./About.html">about</a>
+            <a onclick="Activate('whoweare')" id="whoweare" class="border-b-2 pb-2 border-transparent hover:text-boxcolor" href="./Whower.html"
+              >Who we are?</a
+            >
+            <a onclick="Activate('programs')" id="programs" class="border-b-2 pb-2 border-secondarycolor hover:text-boxcolor" href="./Programs.html"
+              >Programs</a
+            >
+            <a onclick="Activate('contact')" id="contact" class="border-b-2 pb-2 border-transparent hover:text-boxcolor" href="./Contact.html"
+              >Contact</a
+            >
           </div>
         </div>
         <div class="w-fit h-fit flex lg:hidden" onclick="Sidebar()">
@@ -137,11 +143,11 @@
       <div class="capitalize text-center">
         <div class="text-boxcolor text-lg font-medium">programs</div>
         <div class="text-4xl text-maincolor text-maincolor font-semibold">
-          ongoing programs
+          ongoing <span class="text-secondarycolor"> programs</span>
         </div>
       </div>
 
-      <div class="w-10/12 grid md:grid-cols-2 lg:grid-cols-2 gap-14 mx-auto">
+      <div class="w-10/12 lg:w-8/12 grid md:grid-cols-2 lg:grid-cols-2 gap-14 mx-auto">
         <div class="bg-imgboxcolor group pb-6">
           <img
             class="h-72 w-full object-cover"
@@ -283,6 +289,11 @@
         </div>
       </div>
     </div>
+    <video class="w-full
+    h-full mx-auto"  loop autoplay>
+      <source src="../Video1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video> 
 
     <!-- FOOTER -->
     <div>
@@ -296,12 +307,14 @@
         ></iframe>
       </div>
 
-      <footer class="w-screen py-4 bg-maincolor text-white">
+      <footer class="w-12/12 py-4 bg-maincolor text-white">
         <div
           class="grid md:grid-cols-4 lg:grid-cols-7 md:gap-y-16 gap-6 w-11/12 lg:w-10/12 mx-auto py-16 border-b border-gray-300"
         >
           <div class="flex flex-col col-span-2 gap-8">
-            <div class="text-3xl font-medium fontuse flex gap-3 items-center">
+            <div
+              class="cursor-pointer font-medium fontuse flex gap-3 items-center text-2xl lg:text-4xl"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-16 w-16 text-secondarycolor"
@@ -318,13 +331,11 @@
             </div>
             <div>
               When a child gets access to good food, it can change just about
-              everything.
+              everything. 
             </div>
 
-            <!-- SVG ICONS -->
-
-            <div class="cursor-pointer  flex gap-3 items-center">
-              <div class="bg-facebook px-4 py-4">
+            <div class=" cursor-pointer flex gap-3 items-center">
+              <div class="bg-facebook hover:rotate-[360deg] transition-all duration-500 delay-150 ease-in-out px-4 py-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
@@ -336,10 +347,10 @@
                   />
                 </svg>
               </div>
-              <div class="bg-linkdin px-4 py-4">
+              <div class="bg-linkdin group px-4 py-4 hover:rotate-[360deg] transition-all duration-500 delay-150 ease-in-out ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
+                  class="h-6 w-6 "
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -348,12 +359,12 @@
                   />
                 </svg>
               </div>
-              <div class="bg-instagram px-4 py-4">
+              <div class="bg-instagram hover:rotate-[360deg] transition-all duration-500 delay-150 ease-in-out px-4 py-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
+                  class="h-6 w-6 "
                   viewBox="0 0 24 24"
-                  viewBox="0 0 24 24"
+                
                 >
                   <path
                     fill="currentColor"
@@ -362,10 +373,10 @@
                 </svg>
               </div>
 
-              <div class="bg-youtube px-4 py-4">
+              <div class="bg-youtube hover:rotate-[360deg] transition-all duration-500 delay-150 ease-in-out px-4 py-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
+                  class="h-6 w-6 "
                   viewBox="0 0 24 24"
                 >
                   <g fill="none" fill-rule="evenodd">
@@ -384,17 +395,17 @@
           <div class="flex flex-col gap-8">
             <div class="text-2xl font-medium capitalize">Navigation</div>
             <div class="flex flex-col gap-2 capitalize">
-              <a href="../index.html">home</a>
-              <a href="./About.html">about</a>
-              <a href="./Whower.html">Who we are?</a>
-              <a href="./Programs.html">Programs</a>
-              <a href="./Contact.html">Contact</a>
+              <a href="./index.html">home</a>
+              <a href="./HMTL/About.html">about</a>
+              <a href="./HMTL/Whower.html">Who we are?</a>
+              <a href="./HMTL/Programs.html">Programs</a>
+              <a href="./HMTL/Contact.html">Contact</a>
             </div>
           </div>
 
           <div class="flex flex-col lg:col-span-2 gap-8">
             <div class="text-2xl font-medium capitalize">Contact us</div>
-            <div class="flex flex-col gap-4 cursor-pointer">
+            <div class="cursor-pointer flex flex-col gap-4">
               <div class="capitalize hover:underline">
                 4486 Richards Avenue, Modesto CA - 95354
               </div>
@@ -408,7 +419,9 @@
             <div class="flex flex-col gap-3">
               <div>When a child gets access to good food, it can change.</div>
               <div
-                class="w-fit h-fit px-6 py-3 bg-secondarycolor capitalize transition-all duration-700 delay-150 ease-in-out cursor-pointer font-medium hover:bg-transparent border-transparent hover:border-white border-2"
+                class="w-fit h-fit px-6 py-3 bg-secondarycolor 
+                 capitalize transition-all duration-700 delay-150 ease-in-out 
+                 cursor-pointer font-medium hover:bg-transparent border-transparent hover:border-white border-2"
               >
                 join us today
               </div>
