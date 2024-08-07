@@ -68,9 +68,7 @@
       $donation = test_input($_POST["donation"]);
       $agegroup = test_input($_POST["agegroup"]);
 alert('Thank you for submitting!!!!');
-if($firstname.length()<=0){
 
-}
     }
     
 

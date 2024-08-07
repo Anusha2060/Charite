@@ -143,36 +143,44 @@
     <!-- MIDDLE SECTION -->
     <div class="text-center p-20 text-5xl ">Make a <span class="text-secondarycolor font-medium">Donation!!!</span></div>
 
-    <div class="pb-10  w-10/12 mx-auto grid grid-cols-3 gap-14">
-      <div class="grid shadow-md p-5 border grid-cols-2 gap-5  col-span-2">
+    <div class="pb-10  w-10/12 mx-auto grid lg:grid-cols-3 gap-14">
+      <div class=" lg:col-span-2 md:grid flex flex-col shadow-md p-5 border md:grid-cols-2 gap-5  ">
 
       <div class="flex flex-col gap-2">
         <label>First Name</label>
         <input
           class="p-2 border border-gray-700 rounded-md   placeholder:text-gray-400 py-3 text-sm font-light outline-none " 
           type="text"
+          id="firstname"
           name="lastname"
           placeholder="Your first name.."
         />
+        <p class="text-red-500 text-sm first-letter:capitalize" id="firstnamerror"></p>
+
       </div>
       <div class="flex flex-col gap-2">
         <label>Last Name</label>
         <input
           class="p-2 border border-gray-700 rounded-md   placeholder:text-gray-400 py-3 text-sm font-light outline-none"
           type="text"
+          id="lastname"
           name="lastname"
           placeholder="Your last name.."
         />
+        <p class="text-red-500 text-sm first-letter:capitalize" id="lastnameerror"></p>
       </div>
 
       <div class="flex flex-col gap-2">
         <label>Email</label>
         <input
           class="p-2 border border-gray-700 rounded-md   placeholder:text-gray-400 font-light text-sm py-3 outline-none"
-          type="text"
+          type="email"
           name="lastname"
+          id="email"
           placeholder="Your Email.."
         />
+        <p class="text-red-500 text-sm first-letter:capitalize" id="emailerror"></p>
+
       </div>
       <div class="flex flex-col gap-2">
         <label>Message
@@ -181,19 +189,24 @@
           class="border border-gray-700 rounded-md   placeholder:text-gray-400 py-3 text-sm font-light outline-none p-2"
           type="text"
           name="lastname"
+          id="message"
           placeholder="Enter Message.."
         />
+        <p class="text-red-500 text-sm first-letter:capitalize" id="messageerror"></p>
+
       </div>
 
       <div class="flex flex-col gap-2">
         <label for="country">Country</label>
-        <select id="country" name="country" class="border bg-white rounded-md py-3 placeholder:text-maincolor border-gray-700 outline-none p-2">
+        <select id="country" id="country" name="country" class="border bg-white rounded-md py-3 placeholder:text-maincolor border-gray-700 outline-none p-2">
+          <option value="">Select Country</option>
           <option value="australia">Australia</option>
           <option value="usa">United Kingdom</option>
           <option value="canada">Canada</option>
           <option value="usa">USA</option>
 
         </select>
+        <p class="text-red-500 text-sm first-letter:capitalize" id="countryerror"></p>
       </div>
 
       <!-- Multi-TIck  -->
@@ -201,23 +214,25 @@
         <label for="country">Donate</label>
         <div class="flex gap-5 cursor-pointer">
           <div>
-            <input class="cursor-pointer" type="checkbox" />
+            <input class="cursor-pointer" type="radio" id="donation" name="dontaion" value="money" />
             <label for="">Money</label>
           </div>
 
           <div>
-            <input class="cursor-pointer" type="checkbox" />
+            <input class="cursor-pointer" type="radio" id="donation" name="dontaion" value="Food" />
             <label for="">Food</label>
           </div>
           <div>
-            <input class="cursor-pointer" type="checkbox" />
+            <input class="cursor-pointer" type="radio" id="donation" name="dontaion" value="Medicine" />
             <label for="">Medicine</label>
           </div>
           <div>
-            <input class="cursor-pointer" type="checkbox" />
+            <input class="cursor-pointer" type="radio" id="donation" name="dontaion" value="Clothes" />
             <label for="">Clothes</label>
           </div>
         </div>
+        <p class="text-red-500 text-sm first-letter:capitalize" id="donationerror"></p>
+
       </div>
 
       <!-- Radio -->
@@ -226,29 +241,35 @@
         <label for="country">Age group:</label>
         <div class="flex gap-2 ">
           <div>
-            <input class="cursor-pointer" type="radio" />
+            <input class="cursor-pointer" type="radio" id="agegroup" name="agegroup" value="0-20" />
             <label for="">0-20yrs</label>
           </div>
 
           <div>
-            <input class="cursor-pointer"  type="radio" />
+            <input class="cursor-pointer"  type="radio" id="agegroup" name="agegroup" value="21-50" />
             <label for="">21-50yrs</label>
           </div>
           <div>
-            <input class="cursor-pointer" type="radio" />
+            <input class="cursor-pointer" type="radio" id="agegroup" name="agegroup" value="51-80" />
             <label for="">51-80yrs</label>
           </div>
           <div>
-            <input class="cursor-pointer" type="radio" />
+            <input class="cursor-pointer" type="radio" id="agegroup" name="agegroup" value="81-100" />
             <label for="">81-100yrs</label>
           </div>
         </div>
+        <p class="text-red-500 text-sm first-letter:capitalize" id="agegrouperror"></p>
+
       </div>
 
 
-      <button class="uppercase col-span-2 w-fit h-fit py-3 mt-8 px-14 font-medium text-boxcolor border-2 border-boxcolor 
+      <button onclick="Submit()" class="uppercase col-span-2 w-fit h-fit py-3 mt-8 px-14 font-medium text-boxcolor border-2 border-boxcolor 
       hover:border-transparent hover:bg-boxcolor hover:text-white transition-all duration-700 delay-150 ease-in-out">Send</button>
       
+
+      <div id="PopUp" class="p-10 hidden shadow-md rounded-md font-semibold absolute top-0 left-0 right-0 w-fit mx-auto z-50 bg-white">
+Thank you for Submit this form
+      </div>
     
     </div>
 <!-- Second part -->
